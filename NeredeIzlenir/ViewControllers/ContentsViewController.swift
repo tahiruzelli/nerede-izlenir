@@ -42,6 +42,10 @@ extension ContentsViewController : UICollectionViewDelegate,UICollectionViewData
         else if collectionView == self.platformsCollectionView {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PlatformCollectionViewCell", for: indexPath) as! PlatformCollectionViewCell
             cell.platformImage.image = UIImage(named: platformImages[indexPath.row])
+//            if  cell.isSelected{
+//                cell.platformImage.image = UIImage(named: platformImages[0])
+//                print("test")
+//            }
               return cell
         }
         else {

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E06957A28649D66004D15F1 /* LeadingIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E06957928649D66004D15F1 /* LeadingIcon.swift */; };
+		1E06957D2864A6EF004D15F1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E06957C2864A6EF004D15F1 /* SearchViewController.swift */; };
+		1E06957F2864A718004D15F1 /* MovieCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E06957E2864A718004D15F1 /* MovieCardTableViewCell.swift */; };
 		1E2BB5792862164500FA595E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2BB5782862164500FA595E /* AppDelegate.swift */; };
 		1E2BB57B2862164500FA595E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2BB57A2862164500FA595E /* SceneDelegate.swift */; };
 		1E2BB5802862164500FA595E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E2BB57E2862164500FA595E /* Main.storyboard */; };
@@ -25,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E06957928649D66004D15F1 /* LeadingIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadingIcon.swift; sourceTree = "<group>"; };
+		1E06957C2864A6EF004D15F1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		1E06957E2864A718004D15F1 /* MovieCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCardTableViewCell.swift; sourceTree = "<group>"; };
 		1E2BB5752862164500FA595E /* NeredeIzlenir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeredeIzlenir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E2BB5782862164500FA595E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E2BB57A2862164500FA595E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E06957828649D52004D15F1 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				1E06957928649D66004D15F1 /* LeadingIcon.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
 		1E2BB56C2862164500FA595E = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +133,7 @@
 			children = (
 				1E2BB59C28622D1800FA595E /* ContentCollectionViewCell.swift */,
 				1E9132EB2863196500E8D8B6 /* PlatformCollectionViewCell.swift */,
+				1E06957E2864A718004D15F1 /* MovieCardTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -127,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				1E2BB5952862212F00FA595E /* ContentsViewController.swift */,
+				1E06957C2864A6EF004D15F1 /* SearchViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -142,6 +158,7 @@
 		1E2BB59428621B4100FA595E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1E06957828649D52004D15F1 /* TextField */,
 				1E9132E328630A2300E8D8B6 /* UIView */,
 			);
 			path = Extensions;
@@ -244,14 +261,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E2BB5792862164500FA595E /* AppDelegate.swift in Sources */,
+				1E06957D2864A6EF004D15F1 /* SearchViewController.swift in Sources */,
 				1E2BB57B2862164500FA595E /* SceneDelegate.swift in Sources */,
 				1E2BB59D28622D1800FA595E /* ContentCollectionViewCell.swift in Sources */,
 				1E2BB5982862297500FA595E /* GlobalHelper.swift in Sources */,
 				1E9132E528630A3800E8D8B6 /* RoundedCorners.swift in Sources */,
 				1E9132EE2863216F00E8D8B6 /* Shadow.swift in Sources */,
 				1E9132F1286325CF00E8D8B6 /* StaticValues.swift in Sources */,
+				1E06957F2864A718004D15F1 /* MovieCardTableViewCell.swift in Sources */,
 				1E9132EC2863196500E8D8B6 /* PlatformCollectionViewCell.swift in Sources */,
 				1E2BB5962862212F00FA595E /* ContentsViewController.swift in Sources */,
+				1E06957A28649D66004D15F1 /* LeadingIcon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
