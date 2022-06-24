@@ -10,11 +10,16 @@ import UIKit
 class BaseViewController: UIViewController {
     
     var movies : [Movie]?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         movies = loadJson(fileName: "MovieData")
+    }
+    
+    @IBAction func buttonAction(_ sender: Any) {
+        print("Test")
+        GlobalHelper.pushVC(self, identifier: "TabBarViewController", storyBoardName: "Main")
     }
     
     func loadJson(fileName: String) -> [Movie]? {

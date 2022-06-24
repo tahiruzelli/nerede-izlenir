@@ -9,7 +9,24 @@ import UIKit
 
 class ContentCollectionViewCell: UICollectionViewCell {
     
+
+    @IBOutlet weak var backgroundButton: UIButton!
+    @IBOutlet weak var movieImage: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var gradientView: UIView!
+    
+    var movie : Movie?
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setGradientBackground()
+        
+//        backgroundButton.addTarget(self, action: #selector(testfuncc), for: .touchUpInside)
+    }
+    
+    override func layoutSubviews() {
+        movieImage.downloaded(from: movie?.poster?.tmdbPoster?.en ?? movie?.backdrops?.first ?? "")
+    }
     
     func setGradientBackground() {
         let colorTop = UIColor.black.withAlphaComponent(0.0).cgColor
@@ -22,10 +39,10 @@ class ContentCollectionViewCell: UICollectionViewCell {
 
         gradientView.layer.insertSublayer(gradientLayer, at:0)
     }
- 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        setGradientBackground()
+    
+    @IBAction func cellPressedAction(_ sender: Any) {
+        currentMovie = movie
     }
+        
     
 }
