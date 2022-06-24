@@ -1,0 +1,2 @@
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KDropDownMultipleSelection.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MultiStepSlider.framework

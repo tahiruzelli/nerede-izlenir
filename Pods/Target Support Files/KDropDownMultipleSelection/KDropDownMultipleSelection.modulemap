@@ -1,0 +1,6 @@
+framework module KDropDownMultipleSelection {
+  umbrella header "KDropDownMultipleSelection-umbrella.h"
+
+  export *
+  module * { export * }
+}

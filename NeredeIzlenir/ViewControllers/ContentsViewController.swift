@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ContentsViewController: UIViewController {
+class ContentsViewController: BaseViewController {
     @IBOutlet weak var contentsCollectionView: UICollectionView!
     @IBOutlet weak var platformsCollectionView: UICollectionView!
     

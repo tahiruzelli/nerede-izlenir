@@ -10,6 +10,7 @@
 		1E06957A28649D66004D15F1 /* LeadingIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E06957928649D66004D15F1 /* LeadingIcon.swift */; };
 		1E06957D2864A6EF004D15F1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E06957C2864A6EF004D15F1 /* SearchViewController.swift */; };
 		1E06957F2864A718004D15F1 /* MovieCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E06957E2864A718004D15F1 /* MovieCardTableViewCell.swift */; };
+		1E0BF6A128650122002B6A6F /* ShuffleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0BF6A028650122002B6A6F /* ShuffleViewController.swift */; };
 		1E2BB5792862164500FA595E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2BB5782862164500FA595E /* AppDelegate.swift */; };
 		1E2BB57B2862164500FA595E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2BB57A2862164500FA595E /* SceneDelegate.swift */; };
 		1E2BB5802862164500FA595E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E2BB57E2862164500FA595E /* Main.storyboard */; };
@@ -20,17 +21,20 @@
 		1E2BB5982862297500FA595E /* GlobalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2BB5972862297500FA595E /* GlobalHelper.swift */; };
 		1E2BB59D28622D1800FA595E /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2BB59C28622D1800FA595E /* ContentCollectionViewCell.swift */; };
 		1E9132E528630A3800E8D8B6 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9132E428630A3800E8D8B6 /* RoundedCorners.swift */; };
-		1E9132E82863114700E8D8B6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1E9132E72863114700E8D8B6 /* FirebaseAnalytics */; };
-		1E9132EA2863114700E8D8B6 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1E9132E92863114700E8D8B6 /* FirebaseCrashlytics */; };
 		1E9132EC2863196500E8D8B6 /* PlatformCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9132EB2863196500E8D8B6 /* PlatformCollectionViewCell.swift */; };
 		1E9132EE2863216F00E8D8B6 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9132ED2863216F00E8D8B6 /* Shadow.swift */; };
 		1E9132F1286325CF00E8D8B6 /* StaticValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9132F0286325CF00E8D8B6 /* StaticValues.swift */; };
+		1EED2BFB2865C18A006914B6 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EED2BFA2865C18A006914B6 /* MovieModel.swift */; };
+		1EED2BFE2865C4B9006914B6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EED2BFD2865C4B9006914B6 /* BaseViewController.swift */; };
+		1EED2C022865C843006914B6 /* MovieData.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EED2C012865C843006914B6 /* MovieData.json */; };
+		70C65048C5AD7A31319AA2E7 /* Pods_NeredeIzlenir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1741AB28986F8CF64A49B95 /* Pods_NeredeIzlenir.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1E06957928649D66004D15F1 /* LeadingIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadingIcon.swift; sourceTree = "<group>"; };
 		1E06957C2864A6EF004D15F1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		1E06957E2864A718004D15F1 /* MovieCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCardTableViewCell.swift; sourceTree = "<group>"; };
+		1E0BF6A028650122002B6A6F /* ShuffleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleViewController.swift; sourceTree = "<group>"; };
 		1E2BB5752862164500FA595E /* NeredeIzlenir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeredeIzlenir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E2BB5782862164500FA595E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E2BB57A2862164500FA595E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +50,12 @@
 		1E9132EB2863196500E8D8B6 /* PlatformCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformCollectionViewCell.swift; sourceTree = "<group>"; };
 		1E9132ED2863216F00E8D8B6 /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
 		1E9132F0286325CF00E8D8B6 /* StaticValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticValues.swift; sourceTree = "<group>"; };
+		1EED2BFA2865C18A006914B6 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		1EED2BFD2865C4B9006914B6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1EED2C012865C843006914B6 /* MovieData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MovieData.json; sourceTree = "<group>"; };
+		C1741AB28986F8CF64A49B95 /* Pods_NeredeIzlenir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeredeIzlenir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCB5A9CCBBC0E2EA255C9F74 /* Pods-NeredeIzlenir.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeredeIzlenir.release.xcconfig"; path = "Target Support Files/Pods-NeredeIzlenir/Pods-NeredeIzlenir.release.xcconfig"; sourceTree = "<group>"; };
+		FD282A7321F8AF321B1ED4D8 /* Pods-NeredeIzlenir.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeredeIzlenir.debug.xcconfig"; path = "Target Support Files/Pods-NeredeIzlenir/Pods-NeredeIzlenir.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E9132E82863114700E8D8B6 /* FirebaseAnalytics in Frameworks */,
-				1E9132EA2863114700E8D8B6 /* FirebaseCrashlytics in Frameworks */,
+				70C65048C5AD7A31319AA2E7 /* Pods_NeredeIzlenir.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +83,8 @@
 			children = (
 				1E2BB5772862164500FA595E /* NeredeIzlenir */,
 				1E2BB5762862164500FA595E /* Products */,
+				93C6BC2712C5CB5E95BCD65E /* Pods */,
+				71A6BA3ECD021E7263FC3E0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +99,7 @@
 		1E2BB5772862164500FA595E /* NeredeIzlenir */ = {
 			isa = PBXGroup;
 			children = (
+				1EED2BF92865C17F006914B6 /* Models */,
 				1E9132EF286325B500E8D8B6 /* Globals */,
 				1E2BB59428621B4100FA595E /* Extensions */,
 				1E2BB59328621B3600FA595E /* Helpers */,
@@ -105,6 +117,7 @@
 		1E2BB58C2862198B00FA595E /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
+				1EED2C012865C843006914B6 /* MovieData.json */,
 				1E2BB58D286219A200FA595E /* Firebase */,
 				1E2BB5812862164500FA595E /* Assets.xcassets */,
 			);
@@ -143,6 +156,8 @@
 			children = (
 				1E2BB5952862212F00FA595E /* ContentsViewController.swift */,
 				1E06957C2864A6EF004D15F1 /* SearchViewController.swift */,
+				1E0BF6A028650122002B6A6F /* ShuffleViewController.swift */,
+				1EED2BFD2865C4B9006914B6 /* BaseViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -181,6 +196,31 @@
 			path = Globals;
 			sourceTree = "<group>";
 		};
+		1EED2BF92865C17F006914B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1EED2BFA2865C18A006914B6 /* MovieModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		71A6BA3ECD021E7263FC3E0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1741AB28986F8CF64A49B95 /* Pods_NeredeIzlenir.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93C6BC2712C5CB5E95BCD65E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD282A7321F8AF321B1ED4D8 /* Pods-NeredeIzlenir.debug.xcconfig */,
+				FCB5A9CCBBC0E2EA255C9F74 /* Pods-NeredeIzlenir.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E2BB5892862164500FA595E /* Build configuration list for PBXNativeTarget "NeredeIzlenir" */;
 			buildPhases = (
+				66F74EF4699D0C920CF5293C /* [CP] Check Pods Manifest.lock */,
 				1E2BB5712862164500FA595E /* Sources */,
 				1E2BB5722862164500FA595E /* Frameworks */,
 				1E2BB5732862164500FA595E /* Resources */,
+				C18A176D99512379EC85579C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,8 +240,6 @@
 			);
 			name = NeredeIzlenir;
 			packageProductDependencies = (
-				1E9132E72863114700E8D8B6 /* FirebaseAnalytics */,
-				1E9132E92863114700E8D8B6 /* FirebaseCrashlytics */,
 			);
 			productName = NeredeIzlenir;
 			productReference = 1E2BB5752862164500FA595E /* NeredeIzlenir.app */;
@@ -230,7 +270,6 @@
 			);
 			mainGroup = 1E2BB56C2862164500FA595E;
 			packageReferences = (
-				1E9132E62863114700E8D8B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 1E2BB5762862164500FA595E /* Products */;
 			projectDirPath = "";
@@ -250,20 +289,65 @@
 				1E2BB58F286219AF00FA595E /* GoogleService-Info.plist in Resources */,
 				1E2BB5822862164500FA595E /* Assets.xcassets in Resources */,
 				1E2BB5802862164500FA595E /* Main.storyboard in Resources */,
+				1EED2C022865C843006914B6 /* MovieData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		66F74EF4699D0C920CF5293C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NeredeIzlenir-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C18A176D99512379EC85579C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeredeIzlenir/Pods-NeredeIzlenir-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeredeIzlenir/Pods-NeredeIzlenir-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeredeIzlenir/Pods-NeredeIzlenir-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1E2BB5712862164500FA595E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EED2BFB2865C18A006914B6 /* MovieModel.swift in Sources */,
 				1E2BB5792862164500FA595E /* AppDelegate.swift in Sources */,
 				1E06957D2864A6EF004D15F1 /* SearchViewController.swift in Sources */,
 				1E2BB57B2862164500FA595E /* SceneDelegate.swift in Sources */,
 				1E2BB59D28622D1800FA595E /* ContentCollectionViewCell.swift in Sources */,
+				1EED2BFE2865C4B9006914B6 /* BaseViewController.swift in Sources */,
 				1E2BB5982862297500FA595E /* GlobalHelper.swift in Sources */,
 				1E9132E528630A3800E8D8B6 /* RoundedCorners.swift in Sources */,
 				1E9132EE2863216F00E8D8B6 /* Shadow.swift in Sources */,
@@ -271,6 +355,7 @@
 				1E06957F2864A718004D15F1 /* MovieCardTableViewCell.swift in Sources */,
 				1E9132EC2863196500E8D8B6 /* PlatformCollectionViewCell.swift in Sources */,
 				1E2BB5962862212F00FA595E /* ContentsViewController.swift in Sources */,
+				1E0BF6A128650122002B6A6F /* ShuffleViewController.swift in Sources */,
 				1E06957A28649D66004D15F1 /* LeadingIcon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +500,7 @@
 		};
 		1E2BB58A2862164500FA595E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD282A7321F8AF321B1ED4D8 /* Pods-NeredeIzlenir.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -445,6 +531,7 @@
 		};
 		1E2BB58B2862164500FA595E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCB5A9CCBBC0E2EA255C9F74 /* Pods-NeredeIzlenir.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -495,30 +582,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		1E9132E62863114700E8D8B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		1E9132E72863114700E8D8B6 /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1E9132E62863114700E8D8B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-		1E9132E92863114700E8D8B6 /* FirebaseCrashlytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1E9132E62863114700E8D8B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseCrashlytics;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1E2BB56D2862164500FA595E /* Project object */;
 }

@@ -1,0 +1,20 @@
+PODS:
+  - KDropDownMultipleSelection (1.0.1)
+  - MultiStepSlider (2.0)
+
+DEPENDENCIES:
+  - KDropDownMultipleSelection (~> 1.0)
+  - MultiStepSlider (~> 2.0)
+
+SPEC REPOS:
+  trunk:
+    - KDropDownMultipleSelection
+    - MultiStepSlider
+
+SPEC CHECKSUMS:
+  KDropDownMultipleSelection: 898c2795ab6daf85c2a51c9adc109094f103a8f9
+  MultiStepSlider: 62c3762ab85455203d1e85082603ee1c0c3477b3
+
+PODFILE CHECKSUM: 45c807a2af5a82ecf27140f216fbeffc7b0460d8
+
+COCOAPODS: 1.11.3
