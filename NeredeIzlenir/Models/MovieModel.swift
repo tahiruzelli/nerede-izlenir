@@ -99,3 +99,23 @@ struct GenericStreamInfo: Codable {
 struct StreamInfo: Codable {
     let link: String
 }
+
+struct SelectedPlatforms: Codable{
+    var netflix: Bool = false
+    var prime: Bool = false
+    var blutv: Bool = false
+    var puhuTv: Bool = false
+    var mubi: Bool = false
+    var appleTv: Bool = false
+    var googlePlay: Bool = false
+    
+    static func isAllFalse(object : SelectedPlatforms)->Bool{
+        if !object.netflix && !object.prime && !object.blutv && !object.puhuTv && !object.mubi && !object.appleTv && !object.googlePlay {
+            return true
+        }
+        else{
+            return false
+        }
+        
+    }
+}

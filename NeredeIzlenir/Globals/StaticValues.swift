@@ -9,12 +9,10 @@ import Foundation
 
 let platformImages = [
     "apple",
-    "beinConnect",
     "blutv",
     "google",
     "mubi",
     "netflix",
-    "prime-legacy",
     "prime",
     "puhutv",
 ]
