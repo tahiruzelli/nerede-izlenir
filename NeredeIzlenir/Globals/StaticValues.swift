@@ -18,3 +18,5 @@ let platformImages = [
     "prime",
     "puhutv",
 ]
+
+let lastSearchsKey : String = "lastSearchsKey"

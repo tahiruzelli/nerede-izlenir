@@ -34,6 +34,24 @@ class Movie: Codable {
     // Series Info
     var seriesInfo: SeriesInfo?
     var url: String?
+    
+    static func save(value: Movie){
+        var lastSearchs : [Movie] = get()
+        lastSearchs.append(value)
+        UserDefaults.standard.set(try? PropertyListEncoder().encode(lastSearchs), forKey: lastSearchsKey)
+        UserDefaults.standard.synchronize()
+    }
+    
+    static func get()-> [Movie] {
+        var lastSearchs: [Movie]!
+         if let data = UserDefaults.standard.value(forKey: lastSearchsKey) as? Data {
+             lastSearchs = try? PropertyListDecoder().decode([Movie].self, from: data)
+             return lastSearchs!
+         } else {
+             return lastSearchs
+         }
+    }
+    
 }
 struct People: Codable {
     var directors: [String]?

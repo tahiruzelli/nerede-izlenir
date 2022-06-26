@@ -593,6 +593,15 @@
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZwS-4E-n2e">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="139"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain"/>
+                                                    <connections>
+                                                        <action selector="movieBackgroundAction:" destination="jqm-Lt-Sfk" eventType="touchUpInside" id="Oct-6x-bFP"/>
+                                                        <segue destination="zy8-X1-mLy" kind="show" id="Krg-bU-N0k"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" name="SoftBlackColor"/>
                                             <constraints>
@@ -601,6 +610,8 @@
                                                 <constraint firstItem="qFr-Mm-UAj" firstAttribute="top" secondItem="zvO-px-1B3" secondAttribute="bottom" constant="10" id="5Dq-5T-qW5"/>
                                                 <constraint firstItem="7q4-1A-wiY" firstAttribute="leading" secondItem="R78-ys-gWt" secondAttribute="trailing" constant="10" id="79s-8N-w1U"/>
                                                 <constraint firstItem="c4l-xc-p2M" firstAttribute="leading" secondItem="R78-ys-gWt" secondAttribute="trailing" constant="10" id="D3T-VT-dTl"/>
+                                                <constraint firstAttribute="trailing" secondItem="ZwS-4E-n2e" secondAttribute="trailing" id="JbR-lq-eDb"/>
+                                                <constraint firstAttribute="bottom" secondItem="ZwS-4E-n2e" secondAttribute="bottom" id="OSI-l1-DoD"/>
                                                 <constraint firstAttribute="bottom" secondItem="R78-ys-gWt" secondAttribute="bottom" id="OXX-lc-RdO"/>
                                                 <constraint firstItem="zvO-px-1B3" firstAttribute="leading" secondItem="R78-ys-gWt" secondAttribute="trailing" constant="10" id="PCK-Dh-K6N"/>
                                                 <constraint firstItem="R78-ys-gWt" firstAttribute="leading" secondItem="jLb-vN-Gfq" secondAttribute="leading" id="Vjw-hO-j9a"/>
@@ -608,8 +619,10 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="7q4-1A-wiY" secondAttribute="trailing" id="Yxi-Ho-FDI"/>
                                                 <constraint firstItem="qFr-Mm-UAj" firstAttribute="leading" secondItem="R78-ys-gWt" secondAttribute="trailing" constant="10" id="Ztz-Ce-y5d"/>
                                                 <constraint firstAttribute="trailing" secondItem="c4l-xc-p2M" secondAttribute="trailing" constant="10" id="hvG-fc-l5h"/>
+                                                <constraint firstItem="ZwS-4E-n2e" firstAttribute="top" secondItem="jLb-vN-Gfq" secondAttribute="top" id="ioD-z4-6fA"/>
                                                 <constraint firstItem="c4l-xc-p2M" firstAttribute="top" secondItem="qFr-Mm-UAj" secondAttribute="bottom" id="ja0-gr-phb"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="zvO-px-1B3" secondAttribute="trailing" id="l3y-2d-a88"/>
+                                                <constraint firstItem="ZwS-4E-n2e" firstAttribute="leading" secondItem="jLb-vN-Gfq" secondAttribute="leading" id="sWA-M9-mmM"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="qFr-Mm-UAj" secondAttribute="trailing" id="wHp-NE-8hJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -648,6 +661,7 @@
                     <tabBarItem key="tabBarItem" title="Arama" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="PmF-nO-RQf"/>
                     <connections>
                         <outlet property="movieTableView" destination="pFE-P0-nb5" id="bSa-Jp-xaL"/>
+                        <outlet property="searchTextField" destination="W4N-PE-091" id="MJO-UJ-zv1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w3C-Y7-j2g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1011,6 +1025,9 @@
             <size key="intrinsicContentSize" width="251" height="34"/>
         </designable>
     </designables>
+    <inferredMetricsTieBreakers>
+        <segue reference="Krg-bU-N0k"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="book.closed" catalog="system" width="115" height="128"/>
         <image name="eye.circle" catalog="system" width="128" height="121"/>
