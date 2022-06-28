@@ -8,11 +8,24 @@
 import UIKit
 
 class ContentsViewController: BaseViewController {
+    @IBOutlet weak var sortButtonView: UIImageView!
+    @IBOutlet weak var filterButtonView: UIImageView!
     
     @IBOutlet weak var contentCountLabel: UILabel!
     
     @IBOutlet weak var contentsCollectionView: UICollectionView!
     @IBOutlet weak var platformsCollectionView: UICollectionView!
+    
+    //popup outlets
+    @IBOutlet weak var filterCloseButtonView: UIImageView!
+    @IBOutlet weak var sortPopUpBackgroundView: UIView!
+    @IBOutlet weak var filterBackgroundView: UIView!
+    @IBOutlet weak var tmdbSlider: UISlider!
+    @IBOutlet weak var rottenSlider: UISlider!
+    @IBOutlet weak var metaSlider: UISlider!
+    @IBOutlet weak var imdbSlider: UISlider!
+    @IBOutlet weak var yearSliderView: UIView!
+    
     
     var selectedPlatforms : SelectedPlatforms = SelectedPlatforms()
     
@@ -28,6 +41,20 @@ class ContentsViewController: BaseViewController {
         
         platformsCollectionView.delegate = self
         platformsCollectionView.dataSource = self
+        
+        sortPopUpBackgroundView.backgroundColor = .black.withAlphaComponent(0.3)
+        filterBackgroundView.backgroundColor = .black.withAlphaComponent(0.3)
+        var tap = UITapGestureRecognizer(target: self, action: #selector(onFilterButtonPressed))
+        filterButtonView.isUserInteractionEnabled = true
+        filterButtonView.addGestureRecognizer(tap)
+        tap = UITapGestureRecognizer(target: self, action: #selector(onSortButtonPressed))
+        sortButtonView.isUserInteractionEnabled = true
+        sortPopUpBackgroundView.isUserInteractionEnabled = true
+        sortButtonView.addGestureRecognizer(tap)
+        sortPopUpBackgroundView.addGestureRecognizer(tap)
+        tap = UITapGestureRecognizer(target: self, action: #selector(onCancelButtonPressed))
+        filterCloseButtonView.isUserInteractionEnabled = true
+        filterCloseButtonView.addGestureRecognizer(tap)
     }
     
     func getFilteredMovies(){
@@ -45,6 +72,32 @@ class ContentsViewController: BaseViewController {
             filteredMovies = movies ?? []
         }
         contentCountLabel.text = String(filteredMovies.count) + " adet içerik listelendi"
+    }
+    
+    @objc func onFilterButtonPressed(){
+        print("test1")
+        filterBackgroundView.isHidden = !filterBackgroundView.isHidden
+    }
+    
+    @objc func onSortButtonPressed(){
+        print("test2")
+        sortPopUpBackgroundView.isHidden = !sortPopUpBackgroundView.isHidden
+    }
+    
+    @objc func onCancelButtonPressed(){
+        print("test3")
+        filterBackgroundView.isHidden = !filterBackgroundView.isHidden
+    }
+    
+    @IBAction func fliterDoneAction(_ sender: Any) {
+    }
+    @IBAction func cleanFilterAction(_ sender: Any) {
+    }
+    @IBAction func nameSortAction(_ sender: Any) {
+    }
+    @IBAction func yearSortAction(_ sender: Any) {
+    }
+    @IBAction func imdbSortAction(_ sender: Any) {
     }
 }
 

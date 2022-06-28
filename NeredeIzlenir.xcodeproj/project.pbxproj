@@ -20,6 +20,8 @@
 		1E2BB5962862212F00FA595E /* ContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2BB5952862212F00FA595E /* ContentsViewController.swift */; };
 		1E2BB5982862297500FA595E /* GlobalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2BB5972862297500FA595E /* GlobalHelper.swift */; };
 		1E2BB59D28622D1800FA595E /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2BB59C28622D1800FA595E /* ContentCollectionViewCell.swift */; };
+		1E4266802869F95400982AF5 /* GenreCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E42667F2869F95400982AF5 /* GenreCardTableViewCell.swift */; };
+		1E4266822869FD9E00982AF5 /* Genres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4266812869FD9E00982AF5 /* Genres.swift */; };
 		1E9132E528630A3800E8D8B6 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9132E428630A3800E8D8B6 /* RoundedCorners.swift */; };
 		1E9132EC2863196500E8D8B6 /* PlatformCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9132EB2863196500E8D8B6 /* PlatformCollectionViewCell.swift */; };
 		1E9132EE2863216F00E8D8B6 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9132ED2863216F00E8D8B6 /* Shadow.swift */; };
@@ -51,6 +53,8 @@
 		1E2BB5952862212F00FA595E /* ContentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsViewController.swift; sourceTree = "<group>"; };
 		1E2BB5972862297500FA595E /* GlobalHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelper.swift; sourceTree = "<group>"; };
 		1E2BB59C28622D1800FA595E /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
+		1E42667F2869F95400982AF5 /* GenreCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCardTableViewCell.swift; sourceTree = "<group>"; };
+		1E4266812869FD9E00982AF5 /* Genres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genres.swift; sourceTree = "<group>"; };
 		1E9132E428630A3800E8D8B6 /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
 		1E9132EB2863196500E8D8B6 /* PlatformCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformCollectionViewCell.swift; sourceTree = "<group>"; };
 		1E9132ED2863216F00E8D8B6 /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 				1E2BB59C28622D1800FA595E /* ContentCollectionViewCell.swift */,
 				1E9132EB2863196500E8D8B6 /* PlatformCollectionViewCell.swift */,
 				1E06957E2864A718004D15F1 /* MovieCardTableViewCell.swift */,
+				1E42667F2869F95400982AF5 /* GenreCardTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -215,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				1EED2BFA2865C18A006914B6 /* MovieModel.swift */,
+				1E4266812869FD9E00982AF5 /* Genres.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -366,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EED2BFB2865C18A006914B6 /* MovieModel.swift in Sources */,
+				1E4266802869F95400982AF5 /* GenreCardTableViewCell.swift in Sources */,
 				1E2BB5792862164500FA595E /* AppDelegate.swift in Sources */,
 				1E06957D2864A6EF004D15F1 /* SearchViewController.swift in Sources */,
 				1EED2C0B2865FDC0006914B6 /* GenresEnum.swift in Sources */,
@@ -379,6 +386,7 @@
 				1E9132F1286325CF00E8D8B6 /* StaticValues.swift in Sources */,
 				1E06957F2864A718004D15F1 /* MovieCardTableViewCell.swift in Sources */,
 				1E9132EC2863196500E8D8B6 /* PlatformCollectionViewCell.swift in Sources */,
+				1E4266822869FD9E00982AF5 /* Genres.swift in Sources */,
 				1EED2C042865D774006914B6 /* MovieDetailViewController.swift in Sources */,
 				1EED2C0E2866091C006914B6 /* ImageFromUrl.swift in Sources */,
 				1E2BB5962862212F00FA595E /* ContentsViewController.swift in Sources */,

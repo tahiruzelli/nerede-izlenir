@@ -51,7 +51,6 @@ class MovieDetailViewController: BaseViewController {
         countryLabel.text = arrayToString(array: movie?.country ?? [])
     
         descriptionLabel.text = movie?.description?.tr
-        
     }
     
     func genresIdsToString(genreIds: [Int])->String{

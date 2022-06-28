@@ -7,37 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22DF6D8C21EB108FA942D9028B134D2C /* done@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A50C27F655A6706AD83F8461C10E21 /* done@2x.png */; };
-		30C2E443F57B5EB91585B3F70C6E41A5 /* check_mark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E2EC3EA8E8BB433F1AE3274BE6A0862 /* check_mark@2x.png */; };
-		326445E0D463117CBBAE315B1333E216 /* MultiStepSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFFEA8777ABB21C2980BF9DC9E1F842 /* MultiStepSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		366343665126BEA13DEE9F42BA6A99A8 /* drop_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D54B3A0F93D1FA04DAEB0A418986B9 /* drop_down@2x.png */; };
-		37540CE0E5CF69CE5CDEA44D5E5F665E /* DropDownViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = EAE588E67314161DF59BD31E2091B178 /* DropDownViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D3C57BB4A8AB57EBD39F2CB6E02FE66 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB1FAF4A8E9A1A90FD51B7801232242 /* Utility.swift */; };
-		5296AC6EA1EF93B2D975495213FC6568 /* DropDownListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 66A32733ADC0F8493D9C509C53F2889E /* DropDownListView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5599BDDE0326B593648AD5884F505F70 /* Pods-NeredeIzlenir-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DBFC542F92398492494649C99DBEB2 /* Pods-NeredeIzlenir-dummy.m */; };
-		77E44B4D8BE67D24669855968946AC2F /* KDropDownMultipleSelection-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 605BD5A340B4D8AF33CBF98E3B275EC3 /* KDropDownMultipleSelection-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D38AD6F71F807B8B5D26E43AD1FFB48 /* Array+Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3870E3502D8D0B54CF5D24238870B /* Array+Sorting.swift */; };
-		8EE5E8177DE35699802F9B48CFE63728 /* MultiStepSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06A25CBB8CB1311C8DF806424F82AD /* MultiStepSlider.swift */; };
-		9E3BB11CC7296436A41FCFA946B26E17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		AB3A579A49797F164D9DA3FA5809B622 /* MultiStepSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00782684C3C3D189C674A24DFF36F901 /* MultiStepSlider-dummy.m */; };
-		B4A0F1D1A216719FA957AEAD85B535BF /* Pods-NeredeIzlenir-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D6AC8073047B1BFB5383E1587C935 /* Pods-NeredeIzlenir-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B53E7431E445F72A349D45937C87BF38 /* KDropDownMultipleSelection-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD36171C9EF52475A58ECAF09BA253F5 /* KDropDownMultipleSelection-dummy.m */; };
-		C4C9546B0611B96B4E86CEEDAAD254F2 /* DropDownListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 325720927EFBC3D9A07EC9DE82CCB987 /* DropDownListView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14A311B0C0EEE80F4A1385AE05F15715 /* Pods-NeredeIzlenir-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DBFC542F92398492494649C99DBEB2 /* Pods-NeredeIzlenir-dummy.m */; };
+		22DF6D8C21EB108FA942D9028B134D2C /* done@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E79935CA6AE6AD9B5F9255CE0A709D1 /* done@2x.png */; };
+		30C2E443F57B5EB91585B3F70C6E41A5 /* check_mark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE79CE6F96075DF901A04BDAD1544E2 /* check_mark@2x.png */; };
+		326445E0D463117CBBAE315B1333E216 /* MultiStepSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 506B0A8319EEEB2D7C13C2438ECED09C /* MultiStepSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		366343665126BEA13DEE9F42BA6A99A8 /* drop_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC05BBA0AA16AD0487E61E154EFBC3B /* drop_down@2x.png */; };
+		37540CE0E5CF69CE5CDEA44D5E5F665E /* DropDownViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B3B67808AC7F4807CA431BBED1A98882 /* DropDownViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41D1F574DD5E4120C4FEE445FC7705E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		4D3C57BB4A8AB57EBD39F2CB6E02FE66 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A750775A42D03A32000EE6C059CCE91 /* Utility.swift */; };
+		5157EC6843F705ED26DDD74D80A3C951 /* RSSelectionMenuDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ABF034A9909CDF58D77EDE5E29C3E8 /* RSSelectionMenuDataSource.swift */; };
+		5296AC6EA1EF93B2D975495213FC6568 /* DropDownListView.h in Headers */ = {isa = PBXBuildFile; fileRef = D660AE3468B26B572B454439CE10A8AD /* DropDownListView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		539EA13B422E731278EDF3CF5B7EA85A /* RSSelectionMenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C3C436780629633ABABE763F475122 /* RSSelectionMenuDelegate.swift */; };
+		61D8AD5FA6FE8591113C15FAE146BBDC /* RSFirstRowSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5770D273126D7C1C5655D6268E50DFA5 /* RSFirstRowSelection.swift */; };
+		74535B3DCD8B7B3DC79B3FB86F2FAA95 /* RSSelectionMenuSearchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B6BA451B64CD13995D549F4C641E45 /* RSSelectionMenuSearchDelegate.swift */; };
+		77E44B4D8BE67D24669855968946AC2F /* KDropDownMultipleSelection-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96217BF43722F2322E98FE61E867662A /* KDropDownMultipleSelection-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8139D07F3ED142A9C100A3149A23107B /* RSSelectionMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E33707B4DD3A8116D243A97FC8B84D8 /* RSSelectionMenu-dummy.m */; };
+		857582D5FD62615C683724F9B07DF3EC /* NavigationBarTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6245B21B6BDCF73E8EEAE6B890CB87AB /* NavigationBarTheme.swift */; };
+		8D38AD6F71F807B8B5D26E43AD1FFB48 /* Array+Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D23877198E1E9874B89A5565783FD2D /* Array+Sorting.swift */; };
+		8EE5E8177DE35699802F9B48CFE63728 /* MultiStepSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76816E3716C484A585388DBFB82D18C0 /* MultiStepSlider.swift */; };
+		AB3A579A49797F164D9DA3FA5809B622 /* MultiStepSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD463FA4D55C53730A5E4CA90DAF6F04 /* MultiStepSlider-dummy.m */; };
+		AE50D304CCD6ABE3A62C8ED38A5EC68C /* RSSelectionMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 59F471FF21585551E20B91CDBD8E56AB /* RSSelectionMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE79E5B4526604B6C00F157078E058D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		B53E7431E445F72A349D45937C87BF38 /* KDropDownMultipleSelection-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6EEA9078E9E315872B97C12AE0CE32 /* KDropDownMultipleSelection-dummy.m */; };
+		B7012313DF0572209693EB551305FDC9 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8246CF6BA5AB229783417EC57DBDF2 /* Enums.swift */; };
+		BA5A38EB2D6CC06B29C6C3DDFA981DDF /* RSSelectionMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105ED8CF4BF2A89757BEC4FD5C70DD6D /* RSSelectionMenuController.swift */; };
+		C063E602C0FD4C3E37C71683A6714F65 /* RSSelectionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBAB42FFF76CBABEF86BAE75366EB7D /* RSSelectionTableView.swift */; };
+		C4C9546B0611B96B4E86CEEDAAD254F2 /* DropDownListView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF898FC7E85EB033AA15CBE75CFAA342 /* DropDownListView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CA9F2FD277AF7D4CC60A48BA50E08DF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		D5DEA11B54537397D678F1D591FE8FBA /* DropDownViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FF684A689D792587086E4A802CA17A /* DropDownViewCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D5DEA11B54537397D678F1D591FE8FBA /* DropDownViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82ED306506FA2906E16848DCF462F318 /* DropDownViewCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F20EC294D9460097297323FB7CD017D2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAAFD0D25ADF9BF96B6D94E36A2DC24 /* Constants.swift */; };
 		F7A6C840EE6DF99DB7D2298F7B30D0D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		FAC2A0C568472DA91184BC6915F8EB27 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD38C2C4E6070868BCA5BCCC1FE7B583 /* ViewControllerExtension.swift */; };
+		FF724475F860E4FBCF990E266FA6C285 /* Pods-NeredeIzlenir-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D6AC8073047B1BFB5383E1587C935 /* Pods-NeredeIzlenir-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF895A0FBBBD1F7AD2782872C9DC98F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		149310B065387E2B1E53AD585A1878F4 /* PBXContainerItemProxy */ = {
+		10093C7604A9F469A6658862EFD15029 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 77A2145C5BF4436E67129FD4924EB889;
 			remoteInfo = KDropDownMultipleSelection;
 		};
-		68874FB5FF8B0AD14C96ABCE4CE52A30 /* PBXContainerItemProxy */ = {
+		46AF2975EA36C6365C34B3334BE13D3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4BA747C8987B7580A893EC859D12686;
+			remoteInfo = RSSelectionMenu;
+		};
+		F6FFB164C383D7B08F6F29989DCB6E9A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -47,45 +67,63 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00782684C3C3D189C674A24DFF36F901 /* MultiStepSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MultiStepSlider-dummy.m"; sourceTree = "<group>"; };
 		02BA0E6CAB7EA43269D6492E4059FE01 /* Pods-NeredeIzlenir */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NeredeIzlenir"; path = Pods_NeredeIzlenir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AFFEA8777ABB21C2980BF9DC9E1F842 /* MultiStepSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiStepSlider-umbrella.h"; sourceTree = "<group>"; };
-		1AD12D7E15040A0270440F56B0293983 /* KDropDownMultipleSelection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KDropDownMultipleSelection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E2EC3EA8E8BB433F1AE3274BE6A0862 /* check_mark@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "check_mark@2x.png"; path = "kDropDown/check_mark@2x.png"; sourceTree = "<group>"; };
-		21A28E074C48FA47A4F61A349035C8C8 /* KDropDownMultipleSelection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KDropDownMultipleSelection.release.xcconfig; sourceTree = "<group>"; };
-		325720927EFBC3D9A07EC9DE82CCB987 /* DropDownListView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DropDownListView.m; path = kDropDown/DropDownListView.m; sourceTree = "<group>"; };
-		34A50C27F655A6706AD83F8461C10E21 /* done@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "done@2x.png"; path = "kDropDown/done@2x.png"; sourceTree = "<group>"; };
+		0A750775A42D03A32000EE6C059CCE91 /* Utility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = MultiStepSlider/Source/Utility.swift; sourceTree = "<group>"; };
+		105ED8CF4BF2A89757BEC4FD5C70DD6D /* RSSelectionMenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSelectionMenuController.swift; path = RSSelectionMenu/RSSelectionMenu/Source/RSSelectionMenuController.swift; sourceTree = "<group>"; };
+		121BCFD7A95E309409F2A3337FE4EB4D /* RSSelectionMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSSelectionMenu.debug.xcconfig; sourceTree = "<group>"; };
+		19DEBA93B869C16C1D5C16867481A9BE /* RSSelectionMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSSelectionMenu-prefix.pch"; sourceTree = "<group>"; };
+		1AD12D7E15040A0270440F56B0293983 /* KDropDownMultipleSelection */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KDropDownMultipleSelection; path = KDropDownMultipleSelection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BE79CE6F96075DF901A04BDAD1544E2 /* check_mark@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "check_mark@2x.png"; path = "kDropDown/check_mark@2x.png"; sourceTree = "<group>"; };
+		1C8246CF6BA5AB229783417EC57DBDF2 /* Enums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enums.swift; path = RSSelectionMenu/RSSelectionMenu/Utilities/Enums.swift; sourceTree = "<group>"; };
+		1D23877198E1E9874B89A5565783FD2D /* Array+Sorting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Sorting.swift"; path = "MultiStepSlider/Source/Array+Sorting.swift"; sourceTree = "<group>"; };
+		20A41E2EF66A8AB824095E325F4E0F5B /* MultiStepSlider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MultiStepSlider.release.xcconfig; sourceTree = "<group>"; };
+		2CAAFD0D25ADF9BF96B6D94E36A2DC24 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = RSSelectionMenu/RSSelectionMenu/Utilities/Constants.swift; sourceTree = "<group>"; };
+		35AB5D064A280E8F68040D6DEA58C7E3 /* KDropDownMultipleSelection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KDropDownMultipleSelection.debug.xcconfig; sourceTree = "<group>"; };
 		3DF9657008063EFB02DBAD66FC94CA20 /* Pods-NeredeIzlenir.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NeredeIzlenir.debug.xcconfig"; sourceTree = "<group>"; };
+		40B41DEBDBF28F6B789358105D86D556 /* KDropDownMultipleSelection-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KDropDownMultipleSelection-prefix.pch"; sourceTree = "<group>"; };
 		432D48554F03C418365B4B9B2256ECD6 /* MultiStepSlider */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MultiStepSlider; path = MultiStepSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A06A25CBB8CB1311C8DF806424F82AD /* MultiStepSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiStepSlider.swift; path = MultiStepSlider/Source/MultiStepSlider.swift; sourceTree = "<group>"; };
-		558FE245AD90494D2EAD4B53F99A99D1 /* MultiStepSlider-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MultiStepSlider-Info.plist"; sourceTree = "<group>"; };
+		4474F8394C8F9A3A4EB8A27CF6A567DF /* KDropDownMultipleSelection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KDropDownMultipleSelection.release.xcconfig; sourceTree = "<group>"; };
+		4BBAB42FFF76CBABEF86BAE75366EB7D /* RSSelectionTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSelectionTableView.swift; path = RSSelectionMenu/RSSelectionMenu/Source/RSSelectionTableView.swift; sourceTree = "<group>"; };
+		506B0A8319EEEB2D7C13C2438ECED09C /* MultiStepSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiStepSlider-umbrella.h"; sourceTree = "<group>"; };
+		5770D273126D7C1C5655D6268E50DFA5 /* RSFirstRowSelection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSFirstRowSelection.swift; path = RSSelectionMenu/RSSelectionMenu/Source/RSFirstRowSelection.swift; sourceTree = "<group>"; };
+		59F471FF21585551E20B91CDBD8E56AB /* RSSelectionMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSSelectionMenu-umbrella.h"; sourceTree = "<group>"; };
 		5AE6F4A16E514ABE8D7231F9AF72D00F /* Pods-NeredeIzlenir-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NeredeIzlenir-frameworks.sh"; sourceTree = "<group>"; };
-		605BD5A340B4D8AF33CBF98E3B275EC3 /* KDropDownMultipleSelection-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KDropDownMultipleSelection-umbrella.h"; sourceTree = "<group>"; };
+		5B6EEA9078E9E315872B97C12AE0CE32 /* KDropDownMultipleSelection-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KDropDownMultipleSelection-dummy.m"; sourceTree = "<group>"; };
+		5E79935CA6AE6AD9B5F9255CE0A709D1 /* done@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "done@2x.png"; path = "kDropDown/done@2x.png"; sourceTree = "<group>"; };
+		5F654D0A94A9E4B6927FE6FE5D19DD2C /* RSSelectionMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RSSelectionMenu-Info.plist"; sourceTree = "<group>"; };
 		61E66B7CFC5681D069DD6127FBF05974 /* Pods-NeredeIzlenir.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NeredeIzlenir.release.xcconfig"; sourceTree = "<group>"; };
-		66A32733ADC0F8493D9C509C53F2889E /* DropDownListView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DropDownListView.h; path = kDropDown/DropDownListView.h; sourceTree = "<group>"; };
-		720D0E7CEBCA4D150CA98C7429F47D1A /* KDropDownMultipleSelection-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KDropDownMultipleSelection-Info.plist"; sourceTree = "<group>"; };
+		6245B21B6BDCF73E8EEAE6B890CB87AB /* NavigationBarTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationBarTheme.swift; path = RSSelectionMenu/RSSelectionMenu/Source/NavigationBarTheme.swift; sourceTree = "<group>"; };
+		68B7BA757EF8F70DB205F94CD5FD78EC /* KDropDownMultipleSelection.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KDropDownMultipleSelection.modulemap; sourceTree = "<group>"; };
+		6E33707B4DD3A8116D243A97FC8B84D8 /* RSSelectionMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSSelectionMenu-dummy.m"; sourceTree = "<group>"; };
+		76816E3716C484A585388DBFB82D18C0 /* MultiStepSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiStepSlider.swift; path = MultiStepSlider/Source/MultiStepSlider.swift; sourceTree = "<group>"; };
+		78ABF034A9909CDF58D77EDE5E29C3E8 /* RSSelectionMenuDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSelectionMenuDataSource.swift; path = RSSelectionMenu/RSSelectionMenu/Source/RSSelectionMenuDataSource.swift; sourceTree = "<group>"; };
 		7FC7E81F85D03EC761803C7C51D2AADA /* Pods-NeredeIzlenir-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NeredeIzlenir-Info.plist"; sourceTree = "<group>"; };
-		92E54F37EA4FAC3BFD0452C9620047F9 /* MultiStepSlider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MultiStepSlider.release.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		82ED306506FA2906E16848DCF462F318 /* DropDownViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DropDownViewCell.m; path = kDropDown/DropDownViewCell.m; sourceTree = "<group>"; };
+		92FD8DB010198AA5F04E1164D2527818 /* RSSelectionMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RSSelectionMenu.modulemap; sourceTree = "<group>"; };
+		95FE28C242802493343A237490A845D6 /* RSSelectionMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSSelectionMenu.release.xcconfig; sourceTree = "<group>"; };
+		96217BF43722F2322E98FE61E867662A /* KDropDownMultipleSelection-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KDropDownMultipleSelection-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0DBFC542F92398492494649C99DBEB2 /* Pods-NeredeIzlenir-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NeredeIzlenir-dummy.m"; sourceTree = "<group>"; };
-		A6E3870E3502D8D0B54CF5D24238870B /* Array+Sorting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Sorting.swift"; path = "MultiStepSlider/Source/Array+Sorting.swift"; sourceTree = "<group>"; };
-		A7FF684A689D792587086E4A802CA17A /* DropDownViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DropDownViewCell.m; path = kDropDown/DropDownViewCell.m; sourceTree = "<group>"; };
-		AAB4EDC673EC29E055A7399CEBA80390 /* KDropDownMultipleSelection-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KDropDownMultipleSelection-prefix.pch"; sourceTree = "<group>"; };
+		A647F388EF01F2F3D0E22A86DF91BEB6 /* MultiStepSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiStepSlider-prefix.pch"; sourceTree = "<group>"; };
+		AB1AE41CFE28178B8D9ADB7F68103F9C /* KDropDownMultipleSelection-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KDropDownMultipleSelection-Info.plist"; sourceTree = "<group>"; };
+		AD463FA4D55C53730A5E4CA90DAF6F04 /* MultiStepSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MultiStepSlider-dummy.m"; sourceTree = "<group>"; };
 		AD5D6AC8073047B1BFB5383E1587C935 /* Pods-NeredeIzlenir-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NeredeIzlenir-umbrella.h"; sourceTree = "<group>"; };
 		AE467860A1B776D15CE4B4D93CFE9CA8 /* Pods-NeredeIzlenir-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NeredeIzlenir-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B2F23F07372D027173E65B6C6BE92959 /* KDropDownMultipleSelection.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KDropDownMultipleSelection.modulemap; sourceTree = "<group>"; };
-		CA923AF6CA6917AA2E6A9124FDB324DB /* MultiStepSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MultiStepSlider.modulemap; sourceTree = "<group>"; };
+		B3B67808AC7F4807CA431BBED1A98882 /* DropDownViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DropDownViewCell.h; path = kDropDown/DropDownViewCell.h; sourceTree = "<group>"; };
+		C2B6BA451B64CD13995D549F4C641E45 /* RSSelectionMenuSearchDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSelectionMenuSearchDelegate.swift; path = RSSelectionMenu/RSSelectionMenu/Source/RSSelectionMenuSearchDelegate.swift; sourceTree = "<group>"; };
+		C8C4578432714A1A74A7A0C4B4023447 /* RSSelectionMenu */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RSSelectionMenu; path = RSSelectionMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D48E0564A06676707C5F3F3292BB1781 /* MultiStepSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MultiStepSlider.modulemap; sourceTree = "<group>"; };
+		D660AE3468B26B572B454439CE10A8AD /* DropDownListView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DropDownListView.h; path = kDropDown/DropDownListView.h; sourceTree = "<group>"; };
 		D993024BB6DD1790FE7756CE8E25AB51 /* Pods-NeredeIzlenir-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NeredeIzlenir-acknowledgements.plist"; sourceTree = "<group>"; };
-		DDB1FAF4A8E9A1A90FD51B7801232242 /* Utility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = MultiStepSlider/Source/Utility.swift; sourceTree = "<group>"; };
-		E07B2C16772E739EA470479AA916F5D6 /* MultiStepSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiStepSlider-prefix.pch"; sourceTree = "<group>"; };
-		E1CB89049FA50D70476AC7C8AD40C1BB /* MultiStepSlider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MultiStepSlider.debug.xcconfig; sourceTree = "<group>"; };
+		DD38C2C4E6070868BCA5BCCC1FE7B583 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewControllerExtension.swift; path = RSSelectionMenu/RSSelectionMenu/Utilities/Extensions/ViewControllerExtension.swift; sourceTree = "<group>"; };
+		DDC05BBA0AA16AD0487E61E154EFBC3B /* drop_down@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "drop_down@2x.png"; path = "kDropDown/drop_down@2x.png"; sourceTree = "<group>"; };
+		DF3CA5814A7EDD7035958CD7D14AB210 /* MultiStepSlider-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MultiStepSlider-Info.plist"; sourceTree = "<group>"; };
+		DF898FC7E85EB033AA15CBE75CFAA342 /* DropDownListView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DropDownListView.m; path = kDropDown/DropDownListView.m; sourceTree = "<group>"; };
 		E327D4910EB19717EE0E5433A2D62DED /* Pods-NeredeIzlenir.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NeredeIzlenir.modulemap"; sourceTree = "<group>"; };
-		E7557579B59786C0C5E4E6CD0DD790D7 /* KDropDownMultipleSelection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KDropDownMultipleSelection.debug.xcconfig; sourceTree = "<group>"; };
-		E7D54B3A0F93D1FA04DAEB0A418986B9 /* drop_down@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "drop_down@2x.png"; path = "kDropDown/drop_down@2x.png"; sourceTree = "<group>"; };
+		E488BFE76D270C8674D6402E462C0607 /* MultiStepSlider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MultiStepSlider.debug.xcconfig; sourceTree = "<group>"; };
 		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		EAE588E67314161DF59BD31E2091B178 /* DropDownViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DropDownViewCell.h; path = kDropDown/DropDownViewCell.h; sourceTree = "<group>"; };
-		FD36171C9EF52475A58ECAF09BA253F5 /* KDropDownMultipleSelection-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KDropDownMultipleSelection-dummy.m"; sourceTree = "<group>"; };
+		F8C3C436780629633ABABE763F475122 /* RSSelectionMenuDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSelectionMenuDelegate.swift; path = RSSelectionMenu/RSSelectionMenu/Source/RSSelectionMenuDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +135,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		454458E345F5611FCCB5CE6C710111B0 /* Frameworks */ = {
+		48B7CCFAFD74B556A837E8E8DFB99376 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E3BB11CC7296436A41FCFA946B26E17 /* Foundation.framework in Frameworks */,
+				41D1F574DD5E4120C4FEE445FC7705E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E9B4283087F1447CDE8396572984E99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE79E5B4526604B6C00F157078E058D7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +169,16 @@
 				0DF125E1087D7CE051D893ABBA035E99 /* Pods-NeredeIzlenir */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		05019AB2A647278EDD3C3CA56B869B50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				851EC149A8083CF106DC83222A621EA7 /* KDropDownMultipleSelection */,
+				D42AB5C218366E093113593C40937F37 /* MultiStepSlider */,
+				FB1FDC48B471EED77717CC094BED4E43 /* RSSelectionMenu */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		0DF125E1087D7CE051D893ABBA035E99 /* Pods-NeredeIzlenir */ = {
@@ -150,54 +206,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		181464B6B36200F2B000D09F8150A0E9 /* Support Files */ = {
+		54820D77729B74727D4EAE761F0813D1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CA923AF6CA6917AA2E6A9124FDB324DB /* MultiStepSlider.modulemap */,
-				00782684C3C3D189C674A24DFF36F901 /* MultiStepSlider-dummy.m */,
-				558FE245AD90494D2EAD4B53F99A99D1 /* MultiStepSlider-Info.plist */,
-				E07B2C16772E739EA470479AA916F5D6 /* MultiStepSlider-prefix.pch */,
-				0AFFEA8777ABB21C2980BF9DC9E1F842 /* MultiStepSlider-umbrella.h */,
-				E1CB89049FA50D70476AC7C8AD40C1BB /* MultiStepSlider.debug.xcconfig */,
-				92E54F37EA4FAC3BFD0452C9620047F9 /* MultiStepSlider.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MultiStepSlider";
-			sourceTree = "<group>";
-		};
-		237B844548BB28EE09D7770A06C89EAD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1AD12D7E15040A0270440F56B0293983 /* KDropDownMultipleSelection.framework */,
-				432D48554F03C418365B4B9B2256ECD6 /* MultiStepSlider */,
-				02BA0E6CAB7EA43269D6492E4059FE01 /* Pods-NeredeIzlenir */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		28EF0E87B06F60E97891185BAB31FE46 /* KDropDownMultipleSelection */ = {
-			isa = PBXGroup;
-			children = (
-				66A32733ADC0F8493D9C509C53F2889E /* DropDownListView.h */,
-				325720927EFBC3D9A07EC9DE82CCB987 /* DropDownListView.m */,
-				EAE588E67314161DF59BD31E2091B178 /* DropDownViewCell.h */,
-				A7FF684A689D792587086E4A802CA17A /* DropDownViewCell.m */,
-				C2A6D5B4709685F24AD537512916C842 /* Resources */,
-				3BB36F5FD8BB89A2DAC717E5F3891F6E /* Support Files */,
-			);
-			path = KDropDownMultipleSelection;
-			sourceTree = "<group>";
-		};
-		3BB36F5FD8BB89A2DAC717E5F3891F6E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B2F23F07372D027173E65B6C6BE92959 /* KDropDownMultipleSelection.modulemap */,
-				FD36171C9EF52475A58ECAF09BA253F5 /* KDropDownMultipleSelection-dummy.m */,
-				720D0E7CEBCA4D150CA98C7429F47D1A /* KDropDownMultipleSelection-Info.plist */,
-				AAB4EDC673EC29E055A7399CEBA80390 /* KDropDownMultipleSelection-prefix.pch */,
-				605BD5A340B4D8AF33CBF98E3B275EC3 /* KDropDownMultipleSelection-umbrella.h */,
-				E7557579B59786C0C5E4E6CD0DD790D7 /* KDropDownMultipleSelection.debug.xcconfig */,
-				21A28E074C48FA47A4F61A349035C8C8 /* KDropDownMultipleSelection.release.xcconfig */,
+				68B7BA757EF8F70DB205F94CD5FD78EC /* KDropDownMultipleSelection.modulemap */,
+				5B6EEA9078E9E315872B97C12AE0CE32 /* KDropDownMultipleSelection-dummy.m */,
+				AB1AE41CFE28178B8D9ADB7F68103F9C /* KDropDownMultipleSelection-Info.plist */,
+				40B41DEBDBF28F6B789358105D86D556 /* KDropDownMultipleSelection-prefix.pch */,
+				96217BF43722F2322E98FE61E867662A /* KDropDownMultipleSelection-umbrella.h */,
+				35AB5D064A280E8F68040D6DEA58C7E3 /* KDropDownMultipleSelection.debug.xcconfig */,
+				4474F8394C8F9A3A4EB8A27CF6A567DF /* KDropDownMultipleSelection.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/KDropDownMultipleSelection";
@@ -212,32 +230,67 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6CEB772A28014CDC10BD81EA80852BE5 /* MultiStepSlider */ = {
+		810BF11CD20857905EBF3DBC984A52D0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A6E3870E3502D8D0B54CF5D24238870B /* Array+Sorting.swift */,
-				4A06A25CBB8CB1311C8DF806424F82AD /* MultiStepSlider.swift */,
-				DDB1FAF4A8E9A1A90FD51B7801232242 /* Utility.swift */,
-				181464B6B36200F2B000D09F8150A0E9 /* Support Files */,
+				1AD12D7E15040A0270440F56B0293983 /* KDropDownMultipleSelection */,
+				432D48554F03C418365B4B9B2256ECD6 /* MultiStepSlider */,
+				02BA0E6CAB7EA43269D6492E4059FE01 /* Pods-NeredeIzlenir */,
+				C8C4578432714A1A74A7A0C4B4023447 /* RSSelectionMenu */,
 			);
-			path = MultiStepSlider;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		B228E5F1F107FA54D506DC169077A65A /* Pods */ = {
+		851EC149A8083CF106DC83222A621EA7 /* KDropDownMultipleSelection */ = {
 			isa = PBXGroup;
 			children = (
-				28EF0E87B06F60E97891185BAB31FE46 /* KDropDownMultipleSelection */,
-				6CEB772A28014CDC10BD81EA80852BE5 /* MultiStepSlider */,
+				D660AE3468B26B572B454439CE10A8AD /* DropDownListView.h */,
+				DF898FC7E85EB033AA15CBE75CFAA342 /* DropDownListView.m */,
+				B3B67808AC7F4807CA431BBED1A98882 /* DropDownViewCell.h */,
+				82ED306506FA2906E16848DCF462F318 /* DropDownViewCell.m */,
+				978037CC66925A9729B900AED9295D1F /* Resources */,
+				54820D77729B74727D4EAE761F0813D1 /* Support Files */,
 			);
-			name = Pods;
+			name = KDropDownMultipleSelection;
+			path = KDropDownMultipleSelection;
 			sourceTree = "<group>";
 		};
-		C2A6D5B4709685F24AD537512916C842 /* Resources */ = {
+		89B7AFD52EA702BACEF2FCED43C24999 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1E2EC3EA8E8BB433F1AE3274BE6A0862 /* check_mark@2x.png */,
-				34A50C27F655A6706AD83F8461C10E21 /* done@2x.png */,
-				E7D54B3A0F93D1FA04DAEB0A418986B9 /* drop_down@2x.png */,
+				92FD8DB010198AA5F04E1164D2527818 /* RSSelectionMenu.modulemap */,
+				6E33707B4DD3A8116D243A97FC8B84D8 /* RSSelectionMenu-dummy.m */,
+				5F654D0A94A9E4B6927FE6FE5D19DD2C /* RSSelectionMenu-Info.plist */,
+				19DEBA93B869C16C1D5C16867481A9BE /* RSSelectionMenu-prefix.pch */,
+				59F471FF21585551E20B91CDBD8E56AB /* RSSelectionMenu-umbrella.h */,
+				121BCFD7A95E309409F2A3337FE4EB4D /* RSSelectionMenu.debug.xcconfig */,
+				95FE28C242802493343A237490A845D6 /* RSSelectionMenu.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RSSelectionMenu";
+			sourceTree = "<group>";
+		};
+		8FB5E72A54ED5381D17C5DDF39714FD2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D48E0564A06676707C5F3F3292BB1781 /* MultiStepSlider.modulemap */,
+				AD463FA4D55C53730A5E4CA90DAF6F04 /* MultiStepSlider-dummy.m */,
+				DF3CA5814A7EDD7035958CD7D14AB210 /* MultiStepSlider-Info.plist */,
+				A647F388EF01F2F3D0E22A86DF91BEB6 /* MultiStepSlider-prefix.pch */,
+				506B0A8319EEEB2D7C13C2438ECED09C /* MultiStepSlider-umbrella.h */,
+				E488BFE76D270C8674D6402E462C0607 /* MultiStepSlider.debug.xcconfig */,
+				20A41E2EF66A8AB824095E325F4E0F5B /* MultiStepSlider.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MultiStepSlider";
+			sourceTree = "<group>";
+		};
+		978037CC66925A9729B900AED9295D1F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1BE79CE6F96075DF901A04BDAD1544E2 /* check_mark@2x.png */,
+				5E79935CA6AE6AD9B5F9255CE0A709D1 /* done@2x.png */,
+				DDC05BBA0AA16AD0487E61E154EFBC3B /* drop_down@2x.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -247,28 +300,67 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				B228E5F1F107FA54D506DC169077A65A /* Pods */,
-				237B844548BB28EE09D7770A06C89EAD /* Products */,
+				05019AB2A647278EDD3C3CA56B869B50 /* Pods */,
+				810BF11CD20857905EBF3DBC984A52D0 /* Products */,
 				01D9D0828EED7965E52E4E23C109DBEA /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D42AB5C218366E093113593C40937F37 /* MultiStepSlider */ = {
+			isa = PBXGroup;
+			children = (
+				1D23877198E1E9874B89A5565783FD2D /* Array+Sorting.swift */,
+				76816E3716C484A585388DBFB82D18C0 /* MultiStepSlider.swift */,
+				0A750775A42D03A32000EE6C059CCE91 /* Utility.swift */,
+				8FB5E72A54ED5381D17C5DDF39714FD2 /* Support Files */,
+			);
+			name = MultiStepSlider;
+			path = MultiStepSlider;
+			sourceTree = "<group>";
+		};
+		FB1FDC48B471EED77717CC094BED4E43 /* RSSelectionMenu */ = {
+			isa = PBXGroup;
+			children = (
+				2CAAFD0D25ADF9BF96B6D94E36A2DC24 /* Constants.swift */,
+				1C8246CF6BA5AB229783417EC57DBDF2 /* Enums.swift */,
+				6245B21B6BDCF73E8EEAE6B890CB87AB /* NavigationBarTheme.swift */,
+				5770D273126D7C1C5655D6268E50DFA5 /* RSFirstRowSelection.swift */,
+				105ED8CF4BF2A89757BEC4FD5C70DD6D /* RSSelectionMenuController.swift */,
+				78ABF034A9909CDF58D77EDE5E29C3E8 /* RSSelectionMenuDataSource.swift */,
+				F8C3C436780629633ABABE763F475122 /* RSSelectionMenuDelegate.swift */,
+				C2B6BA451B64CD13995D549F4C641E45 /* RSSelectionMenuSearchDelegate.swift */,
+				4BBAB42FFF76CBABEF86BAE75366EB7D /* RSSelectionTableView.swift */,
+				DD38C2C4E6070868BCA5BCCC1FE7B583 /* ViewControllerExtension.swift */,
+				89B7AFD52EA702BACEF2FCED43C24999 /* Support Files */,
+			);
+			name = RSSelectionMenu;
+			path = RSSelectionMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1471B91445A8FEE316A76D30C35F9E45 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B4A0F1D1A216719FA957AEAD85B535BF /* Pods-NeredeIzlenir-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		191CA37D8AB181C3F5C211DCEBEDD8E3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				326445E0D463117CBBAE315B1333E216 /* MultiStepSlider-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E6D2EA267DA94FAF963CDFBE500836F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF724475F860E4FBCF990E266FA6C285 /* Pods-NeredeIzlenir-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98C26584D679CD83F2C06944289378F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE50D304CCD6ABE3A62C8ED38A5EC68C /* RSSelectionMenu-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,18 +379,19 @@
 /* Begin PBXNativeTarget section */
 		1EDA8BA21A75EBB42F0E023B0FF810AE /* Pods-NeredeIzlenir */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB66A59FAD5289C837F9EEE24D9DA5F0 /* Build configuration list for PBXNativeTarget "Pods-NeredeIzlenir" */;
+			buildConfigurationList = 777B157F62A57C0C12A495927CE6E464 /* Build configuration list for PBXNativeTarget "Pods-NeredeIzlenir" */;
 			buildPhases = (
-				1471B91445A8FEE316A76D30C35F9E45 /* Headers */,
-				43DDD3799B451E94295277AC5DC453CF /* Sources */,
-				454458E345F5611FCCB5CE6C710111B0 /* Frameworks */,
-				20BD03AF4CC3D551DDC8E8500600014D /* Resources */,
+				8E6D2EA267DA94FAF963CDFBE500836F /* Headers */,
+				77BFDE2D03877B1082575D7360AD1976 /* Sources */,
+				48B7CCFAFD74B556A837E8E8DFB99376 /* Frameworks */,
+				D77348FCC3568054B5E216C2EF9F838E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3F1A9FF2CA6B124FD97951B9F5F9788C /* PBXTargetDependency */,
-				9326332E4AC94E7A90F7E7737A39B14B /* PBXTargetDependency */,
+				180B9F7551AE0BE27DDA5AF6786638F0 /* PBXTargetDependency */,
+				9C21491416819EB70B1CD92C9DAE54A6 /* PBXTargetDependency */,
+				87E75BACCDAEC7EF473A7072C5BAC450 /* PBXTargetDependency */,
 			);
 			name = "Pods-NeredeIzlenir";
 			productName = Pods_NeredeIzlenir;
@@ -338,7 +431,25 @@
 			);
 			name = KDropDownMultipleSelection;
 			productName = KDropDownMultipleSelection;
-			productReference = 1AD12D7E15040A0270440F56B0293983 /* KDropDownMultipleSelection.framework */;
+			productReference = 1AD12D7E15040A0270440F56B0293983 /* KDropDownMultipleSelection */;
+			productType = "com.apple.product-type.framework";
+		};
+		F4BA747C8987B7580A893EC859D12686 /* RSSelectionMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEE15C098F64A7D06A38C1BB75EFCD80 /* Build configuration list for PBXNativeTarget "RSSelectionMenu" */;
+			buildPhases = (
+				D98C26584D679CD83F2C06944289378F /* Headers */,
+				99D8AEB3D5C49903FE9F461A1A311FDD /* Sources */,
+				8E9B4283087F1447CDE8396572984E99 /* Frameworks */,
+				AEB53F8F708E7DFC758C9CA68AE30441 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSSelectionMenu;
+			productName = RSSelectionMenu;
+			productReference = C8C4578432714A1A74A7A0C4B4023447 /* RSSelectionMenu */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -359,13 +470,14 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 237B844548BB28EE09D7770A06C89EAD /* Products */;
+			productRefGroup = 810BF11CD20857905EBF3DBC984A52D0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				77A2145C5BF4436E67129FD4924EB889 /* KDropDownMultipleSelection */,
 				1FD392147D45EFCE69F273AB0058F8ED /* MultiStepSlider */,
 				1EDA8BA21A75EBB42F0E023B0FF810AE /* Pods-NeredeIzlenir */,
+				F4BA747C8987B7580A893EC859D12686 /* RSSelectionMenu */,
 			);
 		};
 /* End PBXProject section */
@@ -381,14 +493,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		20BD03AF4CC3D551DDC8E8500600014D /* Resources */ = {
+		27FDBEF34C64F64C6680599CC4A2B238 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		27FDBEF34C64F64C6680599CC4A2B238 /* Resources */ = {
+		AEB53F8F708E7DFC758C9CA68AE30441 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D77348FCC3568054B5E216C2EF9F838E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -408,11 +527,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		43DDD3799B451E94295277AC5DC453CF /* Sources */ = {
+		77BFDE2D03877B1082575D7360AD1976 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5599BDDE0326B593648AD5884F505F70 /* Pods-NeredeIzlenir-dummy.m in Sources */,
+				14A311B0C0EEE80F4A1385AE05F15715 /* Pods-NeredeIzlenir-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99D8AEB3D5C49903FE9F461A1A311FDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F20EC294D9460097297323FB7CD017D2 /* Constants.swift in Sources */,
+				B7012313DF0572209693EB551305FDC9 /* Enums.swift in Sources */,
+				857582D5FD62615C683724F9B07DF3EC /* NavigationBarTheme.swift in Sources */,
+				61D8AD5FA6FE8591113C15FAE146BBDC /* RSFirstRowSelection.swift in Sources */,
+				8139D07F3ED142A9C100A3149A23107B /* RSSelectionMenu-dummy.m in Sources */,
+				BA5A38EB2D6CC06B29C6C3DDFA981DDF /* RSSelectionMenuController.swift in Sources */,
+				5157EC6843F705ED26DDD74D80A3C951 /* RSSelectionMenuDataSource.swift in Sources */,
+				539EA13B422E731278EDF3CF5B7EA85A /* RSSelectionMenuDelegate.swift in Sources */,
+				74535B3DCD8B7B3DC79B3FB86F2FAA95 /* RSSelectionMenuSearchDelegate.swift in Sources */,
+				C063E602C0FD4C3E37C71683A6714F65 /* RSSelectionTableView.swift in Sources */,
+				FAC2A0C568472DA91184BC6915F8EB27 /* ViewControllerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,21 +567,99 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3F1A9FF2CA6B124FD97951B9F5F9788C /* PBXTargetDependency */ = {
+		180B9F7551AE0BE27DDA5AF6786638F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KDropDownMultipleSelection;
 			target = 77A2145C5BF4436E67129FD4924EB889 /* KDropDownMultipleSelection */;
-			targetProxy = 149310B065387E2B1E53AD585A1878F4 /* PBXContainerItemProxy */;
+			targetProxy = 10093C7604A9F469A6658862EFD15029 /* PBXContainerItemProxy */;
 		};
-		9326332E4AC94E7A90F7E7737A39B14B /* PBXTargetDependency */ = {
+		87E75BACCDAEC7EF473A7072C5BAC450 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSSelectionMenu;
+			target = F4BA747C8987B7580A893EC859D12686 /* RSSelectionMenu */;
+			targetProxy = 46AF2975EA36C6365C34B3334BE13D3D /* PBXContainerItemProxy */;
+		};
+		9C21491416819EB70B1CD92C9DAE54A6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MultiStepSlider;
 			target = 1FD392147D45EFCE69F273AB0058F8ED /* MultiStepSlider */;
-			targetProxy = 68874FB5FF8B0AD14C96ABCE4CE52A30 /* PBXContainerItemProxy */;
+			targetProxy = F6FFB164C383D7B08F6F29989DCB6E9A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		22851C4DB01BA0FED0DF190F8CA1EF9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95FE28C242802493343A237490A845D6 /* RSSelectionMenu.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RSSelectionMenu/RSSelectionMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RSSelectionMenu/RSSelectionMenu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RSSelectionMenu/RSSelectionMenu.modulemap";
+				PRODUCT_MODULE_NAME = RSSelectionMenu;
+				PRODUCT_NAME = RSSelectionMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		27EBF4A3C71726646378BA8A6277DA9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DF9657008063EFB02DBAD66FC94CA20 /* Pods-NeredeIzlenir.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NeredeIzlenir/Pods-NeredeIzlenir-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NeredeIzlenir/Pods-NeredeIzlenir.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		4214E6946993DF02ED98D89047C64016 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -513,7 +728,7 @@
 		};
 		63B7D898335359B5DADD6D24EC90B915 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92E54F37EA4FAC3BFD0452C9620047F9 /* MultiStepSlider.release.xcconfig */;
+			baseConfigurationReference = 20A41E2EF66A8AB824095E325F4E0F5B /* MultiStepSlider.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -548,7 +763,7 @@
 		};
 		708F70593FD8164C3D531072C7D66F8C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7557579B59786C0C5E4E6CD0DD790D7 /* KDropDownMultipleSelection.debug.xcconfig */;
+			baseConfigurationReference = 35AB5D064A280E8F68040D6DEA58C7E3 /* KDropDownMultipleSelection.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -561,7 +776,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/KDropDownMultipleSelection/KDropDownMultipleSelection-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/KDropDownMultipleSelection/KDropDownMultipleSelection-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -582,7 +797,7 @@
 		};
 		73D0CB6C5A806A54180B001728C29EE8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21A28E074C48FA47A4F61A349035C8C8 /* KDropDownMultipleSelection.release.xcconfig */;
+			baseConfigurationReference = 4474F8394C8F9A3A4EB8A27CF6A567DF /* KDropDownMultipleSelection.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -595,7 +810,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/KDropDownMultipleSelection/KDropDownMultipleSelection-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/KDropDownMultipleSelection/KDropDownMultipleSelection-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -617,7 +832,7 @@
 		};
 		82F27C37D1991CE5C986046867592BE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1CB89049FA50D70476AC7C8AD40C1BB /* MultiStepSlider.debug.xcconfig */;
+			baseConfigurationReference = E488BFE76D270C8674D6402E462C0607 /* MultiStepSlider.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -649,7 +864,41 @@
 			};
 			name = Debug;
 		};
-		A390B212C181BAEC4A9ECC88603E92E0 /* Release */ = {
+		A79E75ABE12008FCF95AB3434CDD4B3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 121BCFD7A95E309409F2A3337FE4EB4D /* RSSelectionMenu.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RSSelectionMenu/RSSelectionMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RSSelectionMenu/RSSelectionMenu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RSSelectionMenu/RSSelectionMenu.modulemap";
+				PRODUCT_MODULE_NAME = RSSelectionMenu;
+				PRODUCT_NAME = RSSelectionMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AA0F4A2B0C4C4ABB4E5EF8A57A7BC818 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 61E66B7CFC5681D069DD6127FBF05974 /* Pods-NeredeIzlenir.release.xcconfig */;
 			buildSettings = {
@@ -686,43 +935,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		B49A75799723B4143DC56C9E61CC1A9D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DF9657008063EFB02DBAD66FC94CA20 /* Pods-NeredeIzlenir.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-NeredeIzlenir/Pods-NeredeIzlenir-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NeredeIzlenir/Pods-NeredeIzlenir.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		CD85FD90473CFBE797E4264E7BBC70AF /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -807,20 +1019,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		777B157F62A57C0C12A495927CE6E464 /* Build configuration list for PBXNativeTarget "Pods-NeredeIzlenir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27EBF4A3C71726646378BA8A6277DA9A /* Debug */,
+				AA0F4A2B0C4C4ABB4E5EF8A57A7BC818 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEE15C098F64A7D06A38C1BB75EFCD80 /* Build configuration list for PBXNativeTarget "RSSelectionMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A79E75ABE12008FCF95AB3434CDD4B3C /* Debug */,
+				22851C4DB01BA0FED0DF190F8CA1EF9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B8EA5B08D05A483D9C92F19F31A853AF /* Build configuration list for PBXNativeTarget "MultiStepSlider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				82F27C37D1991CE5C986046867592BE7 /* Debug */,
 				63B7D898335359B5DADD6D24EC90B915 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FB66A59FAD5289C837F9EEE24D9DA5F0 /* Build configuration list for PBXNativeTarget "Pods-NeredeIzlenir" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B49A75799723B4143DC56C9E61CC1A9D /* Debug */,
-				A390B212C181BAEC4A9ECC88603E92E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

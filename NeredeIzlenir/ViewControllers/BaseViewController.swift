@@ -11,6 +11,8 @@ class BaseViewController: UIViewController {
     
     var movies : [Movie]?
     
+    var genres : [Genre] = Genre.createGenre()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
