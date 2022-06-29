@@ -16,7 +16,10 @@ class ContentsViewController: BaseViewController {
     
     @IBOutlet weak var contentsCollectionView: UICollectionView!
     @IBOutlet weak var platformsCollectionView: UICollectionView!
+    @IBOutlet weak var allButtonView: UIButton!
     
+    @IBOutlet weak var seriesButtonView: UIButton!
+    @IBOutlet weak var movieButtonView: UIButton!
     //popup outlets
     @IBOutlet weak var filterCloseButtonView: UIImageView!
     @IBOutlet weak var sortPopUpBackgroundView: UIView!
@@ -56,6 +59,7 @@ class ContentsViewController: BaseViewController {
     }
     
     func initView(){
+        allButtonView.backgroundColor = .darkGray
         let intervals = [Interval(min: 1900, max: 2022, stepValue: 1),
         Interval(min: 1900, max: 2022, stepValue: 1),
         Interval(min: 1900, max: 2022, stepValue: 1)]
@@ -172,7 +176,6 @@ class ContentsViewController: BaseViewController {
         sortPopUpBackgroundView.isHidden = !sortPopUpBackgroundView.isHidden
     }
     
-    
     @IBAction func imdbSliderAction(_ sender: Any) {
         imdbLabel.text = "\(Int(imdbSlider.value))" + "/10"
     }
@@ -185,6 +188,37 @@ class ContentsViewController: BaseViewController {
     @IBAction func rottenSliderAction(_ sender: Any) {
         rottenLabel.text = "\(Int(rottenSlider.value))" + "/100"
     }
+
+    
+    @IBAction func movieButtonAction(_ sender: Any) {
+        movieButtonView.backgroundColor = .darkGray
+        seriesButtonView.backgroundColor = .clear
+        allButtonView.backgroundColor = .clear
+        filteredMovies = movies ?? []
+        filteredMovies = filteredMovies.filter { $0.contentType == "movie"}
+        contentCountLabel.text = String(filteredMovies.count) + " adet içerik listelendi"
+        contentsCollectionView.reloadData()
+    }
+    @IBAction func seriesButtonAction(_ sender: Any) {
+        movieButtonView.backgroundColor = .clear
+        seriesButtonView.backgroundColor = .darkGray
+        allButtonView.backgroundColor = .clear
+        filteredMovies = movies ?? []
+        filteredMovies = filteredMovies.filter { $0.contentType == "series"}
+        contentCountLabel.text = String(filteredMovies.count) + " adet içerik listelendi"
+        contentsCollectionView.reloadData()
+    }
+    
+    @IBAction func allButtonAction(_ sender: Any) {
+        movieButtonView.backgroundColor = .clear
+        seriesButtonView.backgroundColor = .clear
+        allButtonView.backgroundColor = .darkGray
+        filteredMovies = movies ?? []
+        filteredMovies = filteredMovies.filter { $0.contentType == "series" || $0.contentType == "movie"}
+        contentCountLabel.text = String(filteredMovies.count) + " adet içerik listelendi"
+        contentsCollectionView.reloadData()
+    }
+    
 }
 
 extension ContentsViewController : UICollectionViewDelegate,UICollectionViewDataSource{
