@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MultiStepSlider
 
 class ContentsViewController: BaseViewController {
     @IBOutlet weak var sortButtonView: UIImageView!
@@ -26,6 +27,15 @@ class ContentsViewController: BaseViewController {
     @IBOutlet weak var imdbSlider: UISlider!
     @IBOutlet weak var yearSliderView: UIView!
     
+    @IBOutlet weak var upperYearLabel: UILabel!
+    @IBOutlet weak var lowerYearLabel: UILabel!
+    @IBOutlet weak var rottenLabel: UILabel!
+    @IBOutlet weak var metaLabel: UILabel!
+    @IBOutlet weak var imdbLabel: UILabel!
+    @IBOutlet weak var tmdbLabel: UILabel!
+    
+    
+    let yearSlider = MultiStepRangeSlider()
     
     var selectedPlatforms : SelectedPlatforms = SelectedPlatforms()
     
@@ -33,6 +43,7 @@ class ContentsViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initView()
         filteredMovies = movies ?? []
         contentCountLabel.text = String(filteredMovies.count) + " adet içerik listelendi"
         
@@ -41,20 +52,39 @@ class ContentsViewController: BaseViewController {
         
         platformsCollectionView.delegate = self
         platformsCollectionView.dataSource = self
+    
+    }
+    
+    func initView(){
+        let intervals = [Interval(min: 1900, max: 2022, stepValue: 1),
+        Interval(min: 1900, max: 2022, stepValue: 1),
+        Interval(min: 1900, max: 2022, stepValue: 1)]
+        let preSelectedRange = RangeValue(lower: 1900, upper: 2022)
+        yearSlider.configureSlider(intervals: intervals, preSelectedRange: preSelectedRange)
+        yearSlider.frame = CGRect(x: 50, y: 0, width: yearSliderView.frame.width - 90, height: 30)
+        yearSliderView.addSubview(yearSlider)
+        yearSlider.trackLayerHeight = 3
+        yearSlider.thumbTintColor = .white
+        yearSlider.thumbSize = CGSize(width: 25, height: 25)
+        yearSlider.trackHighlightTintColor = UIColor(named: "ColorOrange")!
         
-        sortPopUpBackgroundView.backgroundColor = .black.withAlphaComponent(0.3)
-        filterBackgroundView.backgroundColor = .black.withAlphaComponent(0.3)
+        sortPopUpBackgroundView.backgroundColor = .black.withAlphaComponent(0.7)
+        filterBackgroundView.backgroundColor = .black.withAlphaComponent(0.7)
         var tap = UITapGestureRecognizer(target: self, action: #selector(onFilterButtonPressed))
         filterButtonView.isUserInteractionEnabled = true
         filterButtonView.addGestureRecognizer(tap)
         tap = UITapGestureRecognizer(target: self, action: #selector(onSortButtonPressed))
         sortButtonView.isUserInteractionEnabled = true
-        sortPopUpBackgroundView.isUserInteractionEnabled = true
         sortButtonView.addGestureRecognizer(tap)
+        tap = UITapGestureRecognizer(target: self, action: #selector(onSortButtonPressed))
+        sortPopUpBackgroundView.isUserInteractionEnabled = true
         sortPopUpBackgroundView.addGestureRecognizer(tap)
         tap = UITapGestureRecognizer(target: self, action: #selector(onCancelButtonPressed))
         filterCloseButtonView.isUserInteractionEnabled = true
         filterCloseButtonView.addGestureRecognizer(tap)
+        
+        yearSlider.addTarget(self, action: #selector(yearSliderChanged), for: .allEvents)
+        
     }
     
     func getFilteredMovies(){
@@ -74,30 +104,86 @@ class ContentsViewController: BaseViewController {
         contentCountLabel.text = String(filteredMovies.count) + " adet içerik listelendi"
     }
     
+    @objc func yearSliderChanged(){
+        upperYearLabel.text = String(Int(yearSlider.continuousCurrentValue.upper))
+        lowerYearLabel.text = String(Int(yearSlider.continuousCurrentValue.lower))
+    }
+    
     @objc func onFilterButtonPressed(){
-        print("test1")
         filterBackgroundView.isHidden = !filterBackgroundView.isHidden
     }
     
     @objc func onSortButtonPressed(){
-        print("test2")
         sortPopUpBackgroundView.isHidden = !sortPopUpBackgroundView.isHidden
     }
     
     @objc func onCancelButtonPressed(){
-        print("test3")
         filterBackgroundView.isHidden = !filterBackgroundView.isHidden
     }
     
     @IBAction func fliterDoneAction(_ sender: Any) {
+        let minYear : Int = Int(yearSlider.discreteCurrentValue.lower)
+        let maxYear : Int = Int(yearSlider.discreteCurrentValue.upper)
+        let minImdb = Int(imdbSlider.value)
+        let minTmdb = Int(tmdbSlider.value)
+        
+        filteredMovies = movies!.filter { ($0.yearNumber ?? 0 >=  minYear) && ($0.yearNumber ?? 0 <=  maxYear) && (Int($0.imdb?.rate ?? 0) >= minImdb)  && (Int($0.tmdb?.rate ?? 0) >= minTmdb)
+        }
+        contentCountLabel.text = String(filteredMovies.count) + " adet içerik listelendi"
+        contentsCollectionView.reloadData()
+        filterBackgroundView.isHidden = !filterBackgroundView.isHidden
+            
     }
     @IBAction func cleanFilterAction(_ sender: Any) {
+        filteredMovies = movies ?? []
+        contentCountLabel.text = String(filteredMovies.count) + " adet içerik listelendi"
+        contentsCollectionView.reloadData()
+        filterBackgroundView.isHidden = !filterBackgroundView.isHidden
+        imdbSlider.value = 0
+        metaSlider.value = 0
+        rottenSlider.value = 0
+        tmdbSlider.value = 0
+        imdbLabel.text = "\(Int(imdbSlider.value))" + "/10"
+        metaLabel.text = "\(Int(metaSlider.value))" + "/100"
+        tmdbLabel.text = "\(Int(tmdbSlider.value))" + "/100"
+        rottenLabel.text = "\(Int(rottenSlider.value))" + "/100"
+        let intervals = [Interval(min: 1900, max: 2022, stepValue: 1),
+        Interval(min: 1900, max: 2022, stepValue: 1),
+        Interval(min: 1900, max: 2022, stepValue: 1)]
+        let preSelectedRange = RangeValue(lower: 1900, upper: 2022)
+        yearSlider.configureSlider(intervals: intervals, preSelectedRange: preSelectedRange)
     }
     @IBAction func nameSortAction(_ sender: Any) {
+        filteredMovies = movies ?? []
+        filteredMovies = filteredMovies.sorted(by: {$0.title?.original ?? "" > $1.title?.original ?? ""})
+        contentsCollectionView.reloadData()
+        sortPopUpBackgroundView.isHidden = !sortPopUpBackgroundView.isHidden
     }
     @IBAction func yearSortAction(_ sender: Any) {
+        filteredMovies = movies ?? []
+        filteredMovies = filteredMovies.sorted(by: {$0.yearNumber ?? 0 > $1.yearNumber ?? 0})
+        contentsCollectionView.reloadData()
+        sortPopUpBackgroundView.isHidden = !sortPopUpBackgroundView.isHidden
     }
     @IBAction func imdbSortAction(_ sender: Any) {
+        filteredMovies = movies ?? []
+        filteredMovies = filteredMovies.sorted(by: {$0.imdb?.rate ?? 0 > $1.imdb?.rate ?? 0})
+        contentsCollectionView.reloadData()
+        sortPopUpBackgroundView.isHidden = !sortPopUpBackgroundView.isHidden
+    }
+    
+    
+    @IBAction func imdbSliderAction(_ sender: Any) {
+        imdbLabel.text = "\(Int(imdbSlider.value))" + "/10"
+    }
+    @IBAction func metaSliderAction(_ sender: Any) {
+        metaLabel.text = "\(Int(metaSlider.value))" + "/100"
+    }
+    @IBAction func tmdbSliderActio(_ sender: Any) {
+        tmdbLabel.text = "\(Int(tmdbSlider.value))" + "/100"
+    }
+    @IBAction func rottenSliderAction(_ sender: Any) {
+        rottenLabel.text = "\(Int(rottenSlider.value))" + "/100"
     }
 }
 

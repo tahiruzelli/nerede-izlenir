@@ -173,9 +173,12 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLN-Q9-uEk">
                                                 <rect key="frame" x="10" y="260" width="280" height="30"/>
                                                 <subviews>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="13e-Tu-ovy">
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="13e-Tu-ovy">
                                                         <rect key="frame" x="43" y="0.0" width="190.5" height="31"/>
                                                         <color key="tintColor" name="ColorOrange"/>
+                                                        <connections>
+                                                            <action selector="rottenSliderAction:" destination="dx1-9Q-7Rk" eventType="valueChanged" id="H1B-P8-02L"/>
+                                                        </connections>
                                                     </slider>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rotten" translatesAutoresizingMaskIntoConstraints="NO" id="4xm-Ff-Zkw">
                                                         <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
@@ -216,9 +219,12 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sN9-88-deA">
                                                 <rect key="frame" x="10" y="300" width="280" height="30"/>
                                                 <subviews>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="JMu-xc-273">
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="JMu-xc-273">
                                                         <rect key="frame" x="43" y="0.0" width="190.5" height="31"/>
                                                         <color key="tintColor" name="ColorOrange"/>
+                                                        <connections>
+                                                            <action selector="tmdbSliderActio:" destination="dx1-9Q-7Rk" eventType="valueChanged" id="HmB-sC-gPg"/>
+                                                        </connections>
                                                     </slider>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tmdb" translatesAutoresizingMaskIntoConstraints="NO" id="uq2-dw-RDj">
                                                         <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
@@ -332,9 +338,12 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5l2-Fa-UAd">
                                                 <rect key="frame" x="10" y="180" width="280" height="30"/>
                                                 <subviews>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="BYb-55-PTH">
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="BYb-55-PTH">
                                                         <rect key="frame" x="43" y="0.0" width="201" height="31"/>
                                                         <color key="tintColor" name="ColorOrange"/>
+                                                        <connections>
+                                                            <action selector="imdbSliderAction:" destination="dx1-9Q-7Rk" eventType="valueChanged" id="zcz-Pf-Fqa"/>
+                                                        </connections>
                                                     </slider>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imbd" translatesAutoresizingMaskIntoConstraints="NO" id="oaB-UM-79r">
                                                         <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
@@ -375,9 +384,12 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NLS-67-yuV">
                                                 <rect key="frame" x="10" y="220" width="280" height="30"/>
                                                 <subviews>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="cga-A8-nCu">
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="cga-A8-nCu">
                                                         <rect key="frame" x="43" y="0.0" width="190.5" height="31"/>
                                                         <color key="tintColor" name="ColorOrange"/>
+                                                        <connections>
+                                                            <action selector="metaSliderAction:" destination="dx1-9Q-7Rk" eventType="valueChanged" id="bk4-IE-qpf"/>
+                                                        </connections>
                                                     </slider>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meta" translatesAutoresizingMaskIntoConstraints="NO" id="B0E-x0-R2p">
                                                         <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
@@ -731,13 +743,19 @@
                         <outlet property="filterBackgroundView" destination="f8P-VT-ibT" id="Ban-Y6-Gez"/>
                         <outlet property="filterButtonView" destination="cwH-0o-Yc2" id="lUg-ic-sSo"/>
                         <outlet property="filterCloseButtonView" destination="eU1-SP-pla" id="xPz-iH-zHJ"/>
+                        <outlet property="imdbLabel" destination="7oH-cU-QxF" id="knw-5a-m4h"/>
                         <outlet property="imdbSlider" destination="BYb-55-PTH" id="OzN-EF-GGC"/>
+                        <outlet property="lowerYearLabel" destination="Yip-MQ-1cP" id="45u-J6-5KP"/>
+                        <outlet property="metaLabel" destination="9uJ-qN-dph" id="SeT-bx-CTy"/>
                         <outlet property="metaSlider" destination="cga-A8-nCu" id="B1w-H2-YtU"/>
                         <outlet property="platformsCollectionView" destination="Sfn-Pg-IqW" id="TO6-Cz-Iyz"/>
+                        <outlet property="rottenLabel" destination="o3o-bC-Zar" id="YSr-UW-eaK"/>
                         <outlet property="rottenSlider" destination="13e-Tu-ovy" id="Ujf-Yp-oL7"/>
                         <outlet property="sortButtonView" destination="5oa-op-5DM" id="O8R-oD-115"/>
                         <outlet property="sortPopUpBackgroundView" destination="iGY-4D-vsM" id="Bea-3Y-x7D"/>
+                        <outlet property="tmdbLabel" destination="xIp-1f-uKP" id="byS-Fd-QsU"/>
                         <outlet property="tmdbSlider" destination="JMu-xc-273" id="nWX-IP-Zxe"/>
+                        <outlet property="upperYearLabel" destination="7aI-9G-cP1" id="HNu-5C-CAR"/>
                         <outlet property="yearSliderView" destination="Xo3-OK-2HX" id="gBe-4f-IyJ"/>
                     </connections>
                 </viewController>
@@ -1065,14 +1083,14 @@
                                         </constraints>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GenreTableView" id="TcO-7v-oV6" customClass="GenreCardTableViewCell" customModule="NeredeIzlenir" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="44.5" width="300" height="43"/>
+                                                <rect key="frame" x="0.0" y="44.5" width="300" height="43.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TcO-7v-oV6" id="uLs-62-gah">
-                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gh-d5-q0O">
-                                                            <rect key="frame" x="16" y="11" width="268" height="21"/>
+                                                            <rect key="frame" x="16" y="11" width="268" height="21.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
