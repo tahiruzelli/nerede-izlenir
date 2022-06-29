@@ -106,8 +106,10 @@ class ShuffleViewController: BaseViewController{
         
         dropdownBackgroundView.backgroundColor = .black.withAlphaComponent(0.7)
         
-        dropDownView.layer.cornerRadius = 16
         dropDownView.layer.borderColor = UIColor(named: "ColorOrange")!.cgColor
+        dropDownView.layer.borderWidth = 1.5
+        dropDownView.layer.cornerRadius = 10
+        
     }
 
     @IBAction func imdbSliderAction(_ sender: Any) {
@@ -127,7 +129,6 @@ class ShuffleViewController: BaseViewController{
         else{
             print("error")
         }
-//        dropdownBackgroundView.isHidden = !dropdownBackgroundView.isHidden
     }
     
     
