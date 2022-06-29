@@ -126,6 +126,14 @@ class GlobalHelper {
         }
     }
     
+    static func arrayContainsArray(array1: [Int], array2: [Int])->Bool{
+        let listSet = Set(array1)
+        let findListSet = Set(array2)
+        let allElemsContained = findListSet.isSubset(of: listSet)
+        return allElemsContained
+    }
+    
+    
     // MARK: - Reachability
     // ================================================
     class func isConnectedToNetwork() -> Bool {
@@ -138,7 +146,7 @@ class GlobalHelper {
                 SCNetworkReachabilityCreateWithAddress(nil, zeroSockAddress)
             }
         }
-        
+
         var flags: SCNetworkReachabilityFlags = SCNetworkReachabilityFlags(rawValue: 0)
         if SCNetworkReachabilityGetFlags(defaultRouteReachability!, &flags) == false {
             return false
@@ -158,5 +166,6 @@ class GlobalHelper {
         
         return ret
     }
+
     
 }

@@ -52,6 +52,7 @@ class ShuffleViewController: BaseViewController{
     @objc func yearSliderChanged(){
         upperYearLabel.text = String(Int(yearSlider.continuousCurrentValue.upper))
         lowerYearLabel.text = String(Int(yearSlider.continuousCurrentValue.lower))
+        previusMovies = []
     }
     
     func getRandomMovie()->Movie?{
@@ -59,15 +60,23 @@ class ShuffleViewController: BaseViewController{
         let maxYear : Int = Int(yearSlider.discreteCurrentValue.upper)
         let minImdb = Int(imdbSlider.value)
         let minTmdb = Int(tmdbSlider.value)
-        var filteredMovies : [Movie] = []
+        
+        var filteredMovies : [Movie] = movies ?? []
+        
+        for item in previusMovies {
+            if let index = filteredMovies.firstIndex(where: {$0 === item}){
+                filteredMovies.remove(at: index)
+            }
+        }
+        
         if SelectedPlatforms.isAllFalse(object: selectedPlatforms){
             //filter as only year and rates
-                filteredMovies = movies!.filter { ($0.yearNumber ?? 0 >=  minYear) && ($0.yearNumber ?? 0 <=  maxYear) && (Int($0.imdb?.rate ?? 0) >= minImdb)  && (Int($0.tmdb?.rate ?? 0) >= minTmdb)
+                filteredMovies = filteredMovies.filter { ($0.yearNumber ?? 0 >=  minYear) && ($0.yearNumber ?? 0 <=  maxYear) && (Int($0.imdb?.rate ?? 0) >= minImdb)  && (Int($0.tmdb?.rate ?? 0) >= minTmdb)
             }
         }
         else{
             //filter as platforms and other filters
-            filteredMovies = movies!.filter {
+            filteredMovies = filteredMovies.filter {
                 ((selectedPlatforms.netflix && $0.streamingInfo?.netflix?.tr.link != nil) ||
                 (selectedPlatforms.appleTv && $0.streamingInfo?.appleTv?.tr.link != nil) ||
                 (selectedPlatforms.puhuTv && $0.streamingInfo?.puhuTv?.tr.link != nil) ||
@@ -78,14 +87,16 @@ class ShuffleViewController: BaseViewController{
                 ($0.yearNumber ?? 0 >=  minYear) && ($0.yearNumber ?? 0 <=  maxYear) && (Int($0.imdb?.rate ?? 0) >= minImdb)  && (Int($0.tmdb?.rate ?? 0) >= minTmdb)
             }
         }
-        //filter as genres
-//        filteredMovies = filteredMovies.filter { $0.genres == Genre.getSelectedGenreIds(object: genres) }
+        
+        filteredMovies = filteredMovies.filter { GlobalHelper.arrayContainsArray(array1: $0.genres ?? [], array2: Genre.getSelectedGenreIds(object: genres)) }
 
         if filteredMovies.isEmpty{
             return nil
         }else{
+            
             let randomInt = Int.random(in: 0..<filteredMovies.count)
             let selectedMovie = filteredMovies[randomInt]
+            previusMovies.append(selectedMovie)
             return selectedMovie
         }
         
@@ -114,10 +125,12 @@ class ShuffleViewController: BaseViewController{
 
     @IBAction func imdbSliderAction(_ sender: Any) {
         imdbLabel.text = "\(Int(imdbSlider.value))" + "/10"
+        previusMovies = []
     }
     
     @IBAction func tmdbSliderAction(_ sender: Any) {
         tmdbLabel.text = "\(Int(tmdbSlider.value))" + "/100"
+        previusMovies = []
     }
     
     @IBAction func shuffleAction(_ sender: Any) {
@@ -201,7 +214,7 @@ extension ShuffleViewController : UICollectionViewDelegate,UICollectionViewDataS
             default:
                 print("error")
             }
-            
+            previusMovies = []
             self.platformsCollectionView.reloadData()
     }
     
@@ -223,6 +236,7 @@ extension ShuffleViewController : UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         genres[indexPath.row].isSelected = !genres[indexPath.row].isSelected
+        previusMovies = []
     }
     
     

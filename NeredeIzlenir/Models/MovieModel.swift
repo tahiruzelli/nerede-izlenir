@@ -37,7 +37,9 @@ class Movie: Codable {
     
     static func save(value: Movie){
         var lastSearchs : [Movie] = get()
-        lastSearchs.append(value)
+        if !lastSearchs.contains(where: {$0.tmdb?.id == value.tmdb?.id}){
+            lastSearchs.append(value)
+        }
         UserDefaults.standard.set(try? PropertyListEncoder().encode(lastSearchs), forKey: lastSearchsKey)
         UserDefaults.standard.synchronize()
     }
@@ -46,9 +48,9 @@ class Movie: Codable {
         var lastSearchs: [Movie]!
          if let data = UserDefaults.standard.value(forKey: lastSearchsKey) as? Data {
              lastSearchs = try? PropertyListDecoder().decode([Movie].self, from: data)
-             return lastSearchs!
+             return lastSearchs ?? []
          } else {
-             return lastSearchs
+             return lastSearchs ?? []
          }
     }
     

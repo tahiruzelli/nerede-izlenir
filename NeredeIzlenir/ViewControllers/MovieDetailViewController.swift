@@ -38,7 +38,7 @@ class MovieDetailViewController: BaseViewController {
         movieImage.downloaded(from: movie?.backdrops?.first ?? movie?.backdrops?.last ?? movie?.poster?.tmdbPoster?.en ?? "")
         titleLabel.text = movie?.title?.tr
         orTitleLabel.text = movie?.title?.original
-        movieTypeLabel.text = genresIdsToString(genreIds: (movie?.genres)!)
+        movieTypeLabel.text = Genre.genresIdsToString(genreIds: (movie?.genres) ?? [])
         
         tmdbLabel.text = "\(movie?.tmdb?.rate ?? 0)"
         metaLabel.text = "\(movie?.metascore?.rate ?? 0)"
@@ -52,9 +52,5 @@ class MovieDetailViewController: BaseViewController {
     
         descriptionLabel.text = movie?.description?.tr
     }
-    
-    func genresIdsToString(genreIds: [Int])->String{
-        
-        return "TODO"
-    }
+
 }

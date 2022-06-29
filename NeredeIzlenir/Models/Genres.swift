@@ -159,7 +159,69 @@ struct Genre : Codable {
         }
         return genres
     }
-
+    
+    static func genresIdsToString(genreIds: [Int])->String{
+        var genresString : String = ""
+        for id in genreIds {
+            switch id{
+            case 28:
+                genresString = genresString + "Action, "
+            case 12:
+                genresString = genresString + "Adventure, "
+            case 16:
+                genresString = genresString + "Animation, "
+            case 1:
+                genresString = genresString + "Biography, "
+            case 35:
+                genresString = genresString + "Comedy, "
+            case 80:
+                genresString = genresString + "Crime, "
+            case 99:
+                genresString = genresString + "Documentary, "
+            case 18:
+                genresString = genresString + "Drama, "
+            case 10751:
+                genresString = genresString + "Family, "
+            case 14:
+                genresString = genresString + "Fantasy, "
+            case 2:
+                genresString = genresString + "Film_Noir, "
+            case 36:
+                genresString = genresString + "History, "
+            case 27:
+                genresString = genresString + "Horror, "
+            case 13:
+                genresString = genresString + "Music, "
+            case 10402:
+                genresString = genresString + "Musical, "
+            case 9648:
+                genresString = genresString + "Mystery, "
+            case 10749:
+                genresString = genresString + "Romance, "
+            case 878:
+                genresString = genresString + "Sci_Fi, "
+            case 5:
+                genresString = genresString + "Sport, "
+            case 53:
+                genresString = genresString + "Thriller, "
+            case 10752:
+                genresString = genresString + "War, "
+            case 37:
+                genresString = genresString + "Western, "
+            case 10763:
+                genresString = genresString + "News, "
+            case 10764:
+                genresString = genresString + "Reality_TV, "
+            case 10767:
+                genresString = genresString + "Talk_Show, "
+            default:
+                genresString = genresString + ""
+            }
+        }
+        genresString = String(genresString.dropLast())
+        genresString = String(genresString.dropLast())
+        return genresString
+    }
 }
 
 
