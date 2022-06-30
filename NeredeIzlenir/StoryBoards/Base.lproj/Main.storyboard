@@ -92,6 +92,11 @@
                                     <constraint firstItem="29t-ZI-8NM" firstAttribute="leading" secondItem="tvW-KY-emd" secondAttribute="trailing" id="srN-ET-Sbp"/>
                                     <constraint firstItem="ab4-C1-q2S" firstAttribute="leading" secondItem="1aZ-Vs-j4A" secondAttribute="leading" id="vct-WJ-fgq"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Sfn-Pg-IqW">
                                 <rect key="frame" x="8" y="44" width="398" height="80"/>
@@ -228,6 +233,11 @@
                                                 <constraint firstItem="uW9-dL-o3k" firstAttribute="leading" secondItem="51j-EK-cHu" secondAttribute="leading" id="ul2-FX-Zbw"/>
                                                 <constraint firstAttribute="trailing" secondItem="uW9-dL-o3k" secondAttribute="trailing" id="wds-Ug-tOa"/>
                                             </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <integer key="value" value="16"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="194" height="267"/>
                                         <connections>
@@ -1953,7 +1963,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imbd" translatesAutoresizingMaskIntoConstraints="NO" id="7ba-tS-SW3">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="got" translatesAutoresizingMaskIntoConstraints="NO" id="7ba-tS-SW3">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="kd7-D2-wGi"/>
@@ -1967,8 +1977,13 @@
                                     <constraint firstAttribute="width" constant="30" id="f9G-3J-ZwM"/>
                                     <constraint firstAttribute="height" constant="30" id="xT8-9R-wnb"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="VgA-qc-dzm">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="VgA-qc-dzm">
                                 <rect key="frame" x="15" y="15.5" width="30" height="29"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1976,6 +1991,11 @@
                                     <constraint firstAttribute="width" constant="30" id="JUt-SU-LC5"/>
                                     <constraint firstAttribute="height" constant="30" id="gdN-Ep-tgr"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ct4-sg-09E">
                                 <rect key="frame" x="20" y="145" width="374" height="391"/>
@@ -2241,6 +2261,11 @@
                                     <constraint firstItem="Gi3-KG-VQC" firstAttribute="leading" secondItem="ct4-sg-09E" secondAttribute="leading" constant="15" id="w5b-M9-AlL"/>
                                     <constraint firstAttribute="trailing" secondItem="57r-9S-hu8" secondAttribute="trailing" constant="15" id="xYk-1T-V3n"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FMz-Hq-RrB"/>
@@ -2287,7 +2312,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="Krg-bU-N0k"/>
+        <segue reference="G0u-wM-yQr"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="archivebox" catalog="system" width="128" height="106"/>
@@ -2296,7 +2321,7 @@
         <image name="arrow.up.and.down.circle" catalog="system" width="128" height="121"/>
         <image name="bookmark" catalog="system" width="112" height="128"/>
         <image name="eye.circle" catalog="system" width="128" height="121"/>
-        <image name="got" width="163" height="310"/>
+        <image name="got" width="1024" height="1024"/>
         <image name="hands.sparkles" catalog="system" width="122" height="128"/>
         <image name="imbd" width="96" height="48"/>
         <image name="info" catalog="system" width="93" height="128"/>
