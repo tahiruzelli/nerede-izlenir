@@ -8,3 +8,5 @@
 import Foundation
 
 var currentMovie : Movie?
+
+var selectedWatchListType : WatchListType = .none

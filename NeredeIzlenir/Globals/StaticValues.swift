@@ -16,5 +16,7 @@ let platformImages = [
     "prime",
     "puhutv",
 ]
-
+//user default keys
 let lastSearchsKey : String = "lastSearchsKey"
+let previusWatchKey : String = "previusWatchKey"
+let watchListKey : String = "watchListKey"

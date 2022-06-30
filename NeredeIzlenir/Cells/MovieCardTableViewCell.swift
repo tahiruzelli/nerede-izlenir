@@ -43,7 +43,7 @@ class MovieCardTableViewCell: UITableViewCell {
     
     @IBAction func movieBackgroundAction(_ sender: Any) {
         currentMovie = movie
-        Movie.save(value: movie!)
+        Movie.savePreviusSearch(value: movie!)
     }
 
 }

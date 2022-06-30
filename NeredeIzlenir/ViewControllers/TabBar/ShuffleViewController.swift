@@ -58,8 +58,8 @@ class ShuffleViewController: BaseViewController{
     func getRandomMovie()->Movie?{
         let minYear : Int = Int(yearSlider.discreteCurrentValue.lower)
         let maxYear : Int = Int(yearSlider.discreteCurrentValue.upper)
-        let minImdb = Int(imdbSlider.value)
-        let minTmdb = Int(tmdbSlider.value)
+        let minImdb : Double = Double(formatSliderValue(value: imdbSlider.value))!
+        let minTmdb = Double(formatSliderValue(value: tmdbSlider.value))!
         
         var filteredMovies : [Movie] = movies ?? []
         
@@ -71,7 +71,7 @@ class ShuffleViewController: BaseViewController{
         
         if SelectedPlatforms.isAllFalse(object: selectedPlatforms){
             //filter as only year and rates
-                filteredMovies = filteredMovies.filter { ($0.yearNumber ?? 0 >=  minYear) && ($0.yearNumber ?? 0 <=  maxYear) && (Int($0.imdb?.rate ?? 0) >= minImdb)  && (Int($0.tmdb?.rate ?? 0) >= minTmdb)
+            filteredMovies = filteredMovies.filter { ($0.yearNumber ?? 0 >=  minYear) && ($0.yearNumber ?? 0 <=  maxYear) && ($0.imdb?.rate ?? 0 >= minImdb)  && ($0.tmdb?.rate ?? 0 >= minTmdb)
             }
         }
         else{
@@ -84,7 +84,7 @@ class ShuffleViewController: BaseViewController{
                 (selectedPlatforms.mubi && $0.streamingInfo?.mubi?.tr.link != nil) ||
                 (selectedPlatforms.googlePlay && $0.streamingInfo?.googlePlay?.tr.link != nil) ||
                 (selectedPlatforms.blutv && $0.streamingInfo?.blutv?.tr.link != nil)) &&
-                ($0.yearNumber ?? 0 >=  minYear) && ($0.yearNumber ?? 0 <=  maxYear) && (Int($0.imdb?.rate ?? 0) >= minImdb)  && (Int($0.tmdb?.rate ?? 0) >= minTmdb)
+                ($0.yearNumber ?? 0 >=  minYear) && ($0.yearNumber ?? 0 <=  maxYear) && ($0.imdb?.rate ?? 0 >= minImdb)  && ($0.tmdb?.rate ?? 0 >= minTmdb)
             }
         }
         
@@ -124,12 +124,12 @@ class ShuffleViewController: BaseViewController{
     }
 
     @IBAction func imdbSliderAction(_ sender: Any) {
-        imdbLabel.text = "\(Int(imdbSlider.value))" + "/10"
+        imdbLabel.text = "\(formatSliderValue(value: imdbSlider.value))" + "/10"
         previusMovies = []
     }
     
     @IBAction func tmdbSliderAction(_ sender: Any) {
-        tmdbLabel.text = "\(Int(tmdbSlider.value))" + "/100"
+        tmdbLabel.text = "\(formatSliderValue(value: tmdbSlider.value))" + "/100"
         previusMovies = []
     }
     

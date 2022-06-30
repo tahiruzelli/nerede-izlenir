@@ -37,6 +37,17 @@ class ContentsViewController: BaseViewController {
     @IBOutlet weak var imdbLabel: UILabel!
     @IBOutlet weak var tmdbLabel: UILabel!
     
+    // sort pop up outlets
+    
+    @IBOutlet weak var sortPopularityLabel: UILabel!
+    @IBOutlet weak var sortYearLabel: UILabel!
+    @IBOutlet weak var sortNameLabel: UILabel!
+    @IBOutlet weak var sortImdbLabel: UILabel!
+    
+    @IBOutlet weak var sortImdbIcon: UIImageView!
+    @IBOutlet weak var sortYearIcon: UIImageView!
+    @IBOutlet weak var sortNameIcon: UIImageView!
+    @IBOutlet weak var sortPopularIcon: UIImageView!
     
     let yearSlider = MultiStepRangeSlider()
     
@@ -108,6 +119,17 @@ class ContentsViewController: BaseViewController {
         contentCountLabel.text = String(filteredMovies.count) + " adet içerik listelendi"
     }
     
+    func makeAllSortButtonsNormal(){
+        sortNameIcon.tintColor = .white
+        sortNameLabel.textColor = .white
+        sortPopularIcon.tintColor = .white
+        sortPopularityLabel.textColor = .white
+        sortYearIcon.tintColor = .white
+        sortYearLabel.textColor = .white
+        sortImdbIcon.tintColor = .white
+        sortImdbLabel.textColor = .white
+    }
+    
     @objc func yearSliderChanged(){
         upperYearLabel.text = String(Int(yearSlider.continuousCurrentValue.upper))
         lowerYearLabel.text = String(Int(yearSlider.continuousCurrentValue.lower))
@@ -128,10 +150,12 @@ class ContentsViewController: BaseViewController {
     @IBAction func fliterDoneAction(_ sender: Any) {
         let minYear : Int = Int(yearSlider.discreteCurrentValue.lower)
         let maxYear : Int = Int(yearSlider.discreteCurrentValue.upper)
-        let minImdb = Int(imdbSlider.value)
-        let minTmdb = Int(tmdbSlider.value)
+        let minImdb : Double = Double(formatSliderValue(value: imdbSlider.value))!
+        let minTmdb : Double = Double(formatSliderValue(value: tmdbSlider.value))!
+        let minMeta : Double = Double(formatSliderValue(value: metaSlider.value))!
+        let minRotten : Double = Double(formatSliderValue(value: rottenSlider.value))!
         
-        filteredMovies = movies!.filter { ($0.yearNumber ?? 0 >=  minYear) && ($0.yearNumber ?? 0 <=  maxYear) && (Int($0.imdb?.rate ?? 0) >= minImdb)  && (Int($0.tmdb?.rate ?? 0) >= minTmdb)
+        filteredMovies = movies!.filter { ($0.yearNumber ?? 0 >=  minYear) && ($0.yearNumber ?? 0 <=  maxYear) && ($0.imdb?.rate ?? 0 >= minImdb)  && ($0.tmdb?.rate ?? 0 >= minTmdb) && ($0.metascore?.rate ?? 0 >= minMeta) && ($0.rotten?.rate ?? 0 >= minRotten)
         }
         contentCountLabel.text = String(filteredMovies.count) + " adet içerik listelendi"
         contentsCollectionView.reloadData()
@@ -147,46 +171,63 @@ class ContentsViewController: BaseViewController {
         metaSlider.value = 0
         rottenSlider.value = 0
         tmdbSlider.value = 0
-        imdbLabel.text = "\(Int(imdbSlider.value))" + "/10"
-        metaLabel.text = "\(Int(metaSlider.value))" + "/100"
-        tmdbLabel.text = "\(Int(tmdbSlider.value))" + "/100"
-        rottenLabel.text = "\(Int(rottenSlider.value))" + "/100"
+        imdbLabel.text = "\(formatSliderValue(value:imdbSlider.value))" + "/10"
+        metaLabel.text = "\(formatSliderValue(value:metaSlider.value)))" + "/100"
+        tmdbLabel.text = "\(formatSliderValue(value:tmdbSlider.value)))" + "/100"
+        rottenLabel.text = "\(formatSliderValue(value:rottenSlider.value)))" + "/100"
         let intervals = [Interval(min: 1900, max: 2022, stepValue: 1),
         Interval(min: 1900, max: 2022, stepValue: 1),
         Interval(min: 1900, max: 2022, stepValue: 1)]
         let preSelectedRange = RangeValue(lower: 1900, upper: 2022)
         yearSlider.configureSlider(intervals: intervals, preSelectedRange: preSelectedRange)
     }
+    
     @IBAction func nameSortAction(_ sender: Any) {
-        filteredMovies = movies ?? []
         filteredMovies = filteredMovies.sorted(by: {$0.title?.original ?? "" > $1.title?.original ?? ""})
         contentsCollectionView.reloadData()
+        makeAllSortButtonsNormal()
+        sortNameIcon.tintColor = .lightGray
+        sortNameLabel.textColor = .lightGray
         sortPopUpBackgroundView.isHidden = !sortPopUpBackgroundView.isHidden
     }
     @IBAction func yearSortAction(_ sender: Any) {
-        filteredMovies = movies ?? []
         filteredMovies = filteredMovies.sorted(by: {$0.yearNumber ?? 0 > $1.yearNumber ?? 0})
         contentsCollectionView.reloadData()
+        makeAllSortButtonsNormal()
+        sortYearIcon.tintColor = .lightGray
+        sortYearLabel.textColor = .lightGray
         sortPopUpBackgroundView.isHidden = !sortPopUpBackgroundView.isHidden
     }
     @IBAction func imdbSortAction(_ sender: Any) {
-        filteredMovies = movies ?? []
         filteredMovies = filteredMovies.sorted(by: {$0.imdb?.rate ?? 0 > $1.imdb?.rate ?? 0})
         contentsCollectionView.reloadData()
+        makeAllSortButtonsNormal()
+        sortImdbIcon.tintColor = .lightGray
+        sortImdbLabel.textColor = .lightGray
+        sortPopUpBackgroundView.isHidden = !sortPopUpBackgroundView.isHidden
+    }
+    
+    @IBAction func popularitySortAction(_ sender: Any) {
+        //TODO sort as first type of json
+        filteredMovies = filteredMovies.sorted(by: {$0.imdb?.rate ?? 0 > $1.imdb?.rate ?? 0})
+        contentsCollectionView.reloadData()
+        makeAllSortButtonsNormal()
+        sortPopularIcon.tintColor = .lightGray
+        sortPopularityLabel.textColor = .lightGray
         sortPopUpBackgroundView.isHidden = !sortPopUpBackgroundView.isHidden
     }
     
     @IBAction func imdbSliderAction(_ sender: Any) {
-        imdbLabel.text = "\(Int(imdbSlider.value))" + "/10"
+        imdbLabel.text = "\(formatSliderValue(value:imdbSlider.value))" + "/10"
     }
     @IBAction func metaSliderAction(_ sender: Any) {
-        metaLabel.text = "\(Int(metaSlider.value))" + "/100"
+        metaLabel.text = "\(formatSliderValue(value:metaSlider.value))" + "/100"
     }
     @IBAction func tmdbSliderActio(_ sender: Any) {
-        tmdbLabel.text = "\(Int(tmdbSlider.value))" + "/100"
+        tmdbLabel.text = "\(formatSliderValue(value:tmdbSlider.value))" + "/100"
     }
     @IBAction func rottenSliderAction(_ sender: Any) {
-        rottenLabel.text = "\(Int(rottenSlider.value))" + "/100"
+        rottenLabel.text = "\(formatSliderValue(value:rottenSlider.value))" + "/100"
     }
 
     

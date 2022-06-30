@@ -12,6 +12,8 @@ class SearchViewController: BaseViewController {
     @IBOutlet weak var searchTextField: DesignableUITextField!
     @IBOutlet weak var movieTableView: UITableView!
     
+    var isUserFinished: Bool = false
+    
     var filteredMovies : [Movie] = []
     var lastSearchs : [Movie] = []
     
@@ -24,14 +26,15 @@ class SearchViewController: BaseViewController {
     }
     
     func getLastSearchs(){
-        lastSearchs = Movie.get()
+        lastSearchs = Movie.getPrevisuSearch()
     }
     
     @objc func textFieldDidChange(_ textField: UITextField) {
-        let filteredArray = movies!.filter{ $0.title!.original!.lowercased().contains(textField.text!.lowercased()) || $0.people?.directors?.contains(textField.text!) ?? false ||
-            $0.people?.cast?.contains(textField.text!) ?? false
+        filteredMovies = movies!.filter{ $0.title!.original!.lowercased().contains(searchTextField.text!.lowercased()) ||
+            arrayToString(array: $0.people?.directors ?? []).lowercased().contains(searchTextField.text!.lowercased()) ||
+            arrayToString(array: $0.people?.cast ?? []).lowercased().contains(searchTextField.text!.lowercased())
         }
-        filteredMovies = filteredArray
+        
         if filteredMovies.isEmpty {
             filteredMovies = []
             getLastSearchs()

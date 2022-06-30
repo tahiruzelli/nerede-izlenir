@@ -35,8 +35,8 @@ class Movie: Codable {
     var seriesInfo: SeriesInfo?
     var url: String?
     
-    static func save(value: Movie){
-        var lastSearchs : [Movie] = get()
+    static func savePreviusSearch(value: Movie){
+        var lastSearchs : [Movie] = getPrevisuSearch()
         if !lastSearchs.contains(where: {$0.tmdb?.id == value.tmdb?.id}){
             lastSearchs.append(value)
         }
@@ -44,9 +44,47 @@ class Movie: Codable {
         UserDefaults.standard.synchronize()
     }
     
-    static func get()-> [Movie] {
+    static func getPrevisuSearch()-> [Movie] {
         var lastSearchs: [Movie]!
          if let data = UserDefaults.standard.value(forKey: lastSearchsKey) as? Data {
+             lastSearchs = try? PropertyListDecoder().decode([Movie].self, from: data)
+             return lastSearchs ?? []
+         } else {
+             return lastSearchs ?? []
+         }
+    }
+    
+    static func saveWatchList(value: Movie){
+        var lastSearchs : [Movie] = getWatchList()
+        if !lastSearchs.contains(where: {$0.tmdb?.id == value.tmdb?.id}){
+            lastSearchs.append(value)
+        }
+        UserDefaults.standard.set(try? PropertyListEncoder().encode(lastSearchs), forKey: watchListKey)
+        UserDefaults.standard.synchronize()
+    }
+    
+    static func getWatchList()-> [Movie] {
+        var lastSearchs: [Movie]!
+         if let data = UserDefaults.standard.value(forKey: watchListKey) as? Data {
+             lastSearchs = try? PropertyListDecoder().decode([Movie].self, from: data)
+             return lastSearchs ?? []
+         } else {
+             return lastSearchs ?? []
+         }
+    }
+    
+    static func savePreviusWatch(value: Movie){
+        var lastSearchs : [Movie] = getPrevisuWatch()
+        if !lastSearchs.contains(where: {$0.tmdb?.id == value.tmdb?.id}){
+            lastSearchs.append(value)
+        }
+        UserDefaults.standard.set(try? PropertyListEncoder().encode(lastSearchs), forKey: previusWatchKey)
+        UserDefaults.standard.synchronize()
+    }
+    
+    static func getPrevisuWatch()-> [Movie] {
+        var lastSearchs: [Movie]!
+         if let data = UserDefaults.standard.value(forKey: previusWatchKey) as? Data {
              lastSearchs = try? PropertyListDecoder().decode([Movie].self, from: data)
              return lastSearchs ?? []
          } else {
