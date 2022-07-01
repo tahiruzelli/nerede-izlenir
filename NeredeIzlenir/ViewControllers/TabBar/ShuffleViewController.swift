@@ -140,7 +140,9 @@ class ShuffleViewController: BaseViewController{
             performSegue(withIdentifier: "ShuffleToDetailSegue", sender: nil)
         }
         else{
-            print("error")
+            let alert = UIAlertController(title: "Uyarı", message: "Size uygun gösterilebilecek içeriğimiz kalmadı. Filtrelerinizi değiştirip tekrar deneyin", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Tamam", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
     }
     

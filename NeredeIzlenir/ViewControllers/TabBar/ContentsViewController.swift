@@ -123,10 +123,6 @@ class ContentsViewController: BaseViewController {
                (selectedPlatforms.blutv && $0.streamingInfo?.blutv?.tr.link != nil)
            }
         }
-         
-
-   
-
         contentCountLabel.text = String(filteredMovies.count) + " adet içerik listelendi"
     }
     

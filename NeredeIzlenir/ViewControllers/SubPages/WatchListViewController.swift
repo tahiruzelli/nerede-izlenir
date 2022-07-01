@@ -23,12 +23,11 @@ class WatchListViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getMovieList()
-        watchListTableView.delegate = self
-        watchListTableView.dataSource = self
-        
- 
-        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            self.getMovieList()
+            self.watchListTableView.delegate = self
+            self.watchListTableView.dataSource = self
+        }
     }
     
     func getMovieList(){
