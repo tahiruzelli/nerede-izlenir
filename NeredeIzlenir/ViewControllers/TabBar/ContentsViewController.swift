@@ -103,19 +103,30 @@ class ContentsViewController: BaseViewController {
     }
     
     func getFilteredMovies(){
-        let filteredArray = movies?.filter {
-            (selectedPlatforms.netflix && $0.streamingInfo?.netflix?.tr.link != nil) ||
-            (selectedPlatforms.appleTv && $0.streamingInfo?.appleTv?.tr.link != nil) ||
-            (selectedPlatforms.puhuTv && $0.streamingInfo?.puhuTv?.tr.link != nil) ||
-            (selectedPlatforms.prime && $0.streamingInfo?.prime?.tr.link != nil) ||
-            (selectedPlatforms.mubi && $0.streamingInfo?.mubi?.tr.link != nil) ||
-            (selectedPlatforms.googlePlay && $0.streamingInfo?.googlePlay?.tr.link != nil) ||
-            (selectedPlatforms.blutv && $0.streamingInfo?.blutv?.tr.link != nil)
+        let minYear : Int = Int(yearSlider.discreteCurrentValue.lower)
+        let maxYear : Int = Int(yearSlider.discreteCurrentValue.upper)
+        let minImdb : Double = Double(formatSliderValue(value: imdbSlider.value))!
+        let minTmdb : Double = Double(formatSliderValue(value: tmdbSlider.value))!
+        let minMeta : Double = Double(formatSliderValue(value: metaSlider.value))!
+        let minRotten : Double = Double(formatSliderValue(value: rottenSlider.value))!
+        
+        filteredMovies = movies!.filter { ($0.yearNumber ?? 0 >=  minYear) && ($0.yearNumber ?? 0 <=  maxYear) && ($0.imdb?.rate ?? 0 >= minImdb)  && ($0.tmdb?.rate ?? 0 >= minTmdb) && ($0.metascore?.rate ?? 0 >= minMeta) && ($0.rotten?.rate ?? 0 >= minRotten)
         }
-        filteredMovies = filteredArray ?? []
-        if SelectedPlatforms.isAllFalse(object: selectedPlatforms){
-            filteredMovies = movies ?? []
+        if !SelectedPlatforms.isAllFalse(object: selectedPlatforms){
+            filteredMovies = filteredMovies.filter {
+               (selectedPlatforms.netflix && $0.streamingInfo?.netflix?.tr.link != nil) ||
+               (selectedPlatforms.appleTv && $0.streamingInfo?.appleTv?.tr.link != nil) ||
+               (selectedPlatforms.puhuTv && $0.streamingInfo?.puhuTv?.tr.link != nil) ||
+               (selectedPlatforms.prime && $0.streamingInfo?.prime?.tr.link != nil) ||
+               (selectedPlatforms.mubi && $0.streamingInfo?.mubi?.tr.link != nil) ||
+               (selectedPlatforms.googlePlay && $0.streamingInfo?.googlePlay?.tr.link != nil) ||
+               (selectedPlatforms.blutv && $0.streamingInfo?.blutv?.tr.link != nil)
+           }
         }
+         
+
+   
+
         contentCountLabel.text = String(filteredMovies.count) + " adet içerik listelendi"
     }
     
@@ -148,15 +159,7 @@ class ContentsViewController: BaseViewController {
     }
     
     @IBAction func fliterDoneAction(_ sender: Any) {
-        let minYear : Int = Int(yearSlider.discreteCurrentValue.lower)
-        let maxYear : Int = Int(yearSlider.discreteCurrentValue.upper)
-        let minImdb : Double = Double(formatSliderValue(value: imdbSlider.value))!
-        let minTmdb : Double = Double(formatSliderValue(value: tmdbSlider.value))!
-        let minMeta : Double = Double(formatSliderValue(value: metaSlider.value))!
-        let minRotten : Double = Double(formatSliderValue(value: rottenSlider.value))!
-        
-        filteredMovies = movies!.filter { ($0.yearNumber ?? 0 >=  minYear) && ($0.yearNumber ?? 0 <=  maxYear) && ($0.imdb?.rate ?? 0 >= minImdb)  && ($0.tmdb?.rate ?? 0 >= minTmdb) && ($0.metascore?.rate ?? 0 >= minMeta) && ($0.rotten?.rate ?? 0 >= minRotten)
-        }
+        getFilteredMovies()
         contentCountLabel.text = String(filteredMovies.count) + " adet içerik listelendi"
         contentsCollectionView.reloadData()
         filterBackgroundView.isHidden = !filterBackgroundView.isHidden
@@ -208,8 +211,16 @@ class ContentsViewController: BaseViewController {
     }
     
     @IBAction func popularitySortAction(_ sender: Any) {
-        //TODO sort as first type of json
-        filteredMovies = filteredMovies.sorted(by: {$0.imdb?.rate ?? 0 > $1.imdb?.rate ?? 0})
+        getFilteredMovies()
+        let minYear : Int = Int(yearSlider.discreteCurrentValue.lower)
+        let maxYear : Int = Int(yearSlider.discreteCurrentValue.upper)
+        let minImdb : Double = Double(formatSliderValue(value: imdbSlider.value))!
+        let minTmdb : Double = Double(formatSliderValue(value: tmdbSlider.value))!
+        let minMeta : Double = Double(formatSliderValue(value: metaSlider.value))!
+        let minRotten : Double = Double(formatSliderValue(value: rottenSlider.value))!
+        filteredMovies = movies!.filter { ($0.yearNumber ?? 0 >=  minYear) && ($0.yearNumber ?? 0 <=  maxYear) && ($0.imdb?.rate ?? 0 >= minImdb)  && ($0.tmdb?.rate ?? 0 >= minTmdb) && ($0.metascore?.rate ?? 0 >= minMeta) && ($0.rotten?.rate ?? 0 >= minRotten)
+        }
+        contentCountLabel.text = String(filteredMovies.count) + " adet içerik listelendi"
         contentsCollectionView.reloadData()
         makeAllSortButtonsNormal()
         sortPopularIcon.tintColor = .lightGray
