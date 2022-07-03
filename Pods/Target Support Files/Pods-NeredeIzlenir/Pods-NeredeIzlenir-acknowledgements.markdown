@@ -1,11 +1,11 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## MultiStepSlider
+## Kingfisher
 
 The MIT License (MIT)
 
-Copyright (c) 2016 hsusmita
+Copyright (c) 2019 Wei Wang
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -26,11 +26,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-## RSSelectionMenu
 
-MIT License
+## MultiStepSlider
 
-Copyright (c) 2017 Rushi Sangani
+The MIT License (MIT)
+
+Copyright (c) 2016 hsusmita
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

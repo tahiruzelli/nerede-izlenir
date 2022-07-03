@@ -20,7 +20,6 @@ class BaseViewController: UIViewController {
     }
     
     @IBAction func buttonAction(_ sender: Any) {
-        print("Test")
         GlobalHelper.pushVC(self, identifier: "TabBarViewController", storyBoardName: "Main")
     }
     

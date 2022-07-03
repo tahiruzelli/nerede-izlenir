@@ -38,7 +38,8 @@ class MovieCardTableViewCell: UITableViewCell {
         super.layoutSubviews()
 
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 10, left:0, bottom: 10,right:0 ))
-        movieImage.downloaded(from: movie?.poster?.tmdbPoster?.en ?? movie?.backdrops?.first ?? "")
+        let url = URL(string: movie?.poster?.tmdbPoster?.en ?? movie?.backdrops?.first ?? "")
+        movieImage.kf.setImage(with: url)
     }
     
     @IBAction func movieBackgroundAction(_ sender: Any) {

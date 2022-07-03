@@ -27,14 +27,21 @@ class SearchViewController: BaseViewController {
     
     func getLastSearchs(){
         lastSearchs = Movie.getPrevisuSearch()
+        lastSearchs = lastSearchs.reversed()
     }
     
     @objc func textFieldDidChange(_ textField: UITextField) {
+        NSObject.cancelPreviousPerformRequests(withTarget: self, selector: #selector(self.search), object: nil)
+            self.perform(#selector(self.search), with: nil, afterDelay: 0.5)
+
+    }
+    
+    @objc func search(){
         filteredMovies = movies!.filter{ $0.title!.original!.lowercased().contains(searchTextField.text!.lowercased()) ||
             arrayToString(array: $0.people?.directors ?? []).lowercased().contains(searchTextField.text!.lowercased()) ||
             arrayToString(array: $0.people?.cast ?? []).lowercased().contains(searchTextField.text!.lowercased())
         }
-        
+
         if filteredMovies.isEmpty {
             filteredMovies = []
             getLastSearchs()

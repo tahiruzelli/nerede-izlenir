@@ -37,7 +37,8 @@ class MovieDetailViewController: BaseViewController {
         super.viewDidLoad()
         movie = currentMovie
         
-        movieImage.downloaded(from: movie?.backdrops?.first ?? movie?.backdrops?.last ?? movie?.poster?.tmdbPoster?.en ?? "")
+        let url = URL(string: movie?.backdrops?.first ?? movie?.backdrops?.last ?? movie?.poster?.tmdbPoster?.en ?? "")
+        movieImage.kf.setImage(with: url)
         titleLabel.text = movie?.title?.tr
         orTitleLabel.text = movie?.title?.original
         movieTypeLabel.text = Genre.genresIdsToString(genreIds: (movie?.genres) ?? [])

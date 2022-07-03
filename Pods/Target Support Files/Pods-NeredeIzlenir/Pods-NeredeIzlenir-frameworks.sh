@@ -176,14 +176,12 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/KDropDownMultipleSelection/KDropDownMultipleSelection.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MultiStepSlider/MultiStepSlider.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RSSelectionMenu/RSSelectionMenu.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/KDropDownMultipleSelection/KDropDownMultipleSelection.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MultiStepSlider/MultiStepSlider.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RSSelectionMenu/RSSelectionMenu.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

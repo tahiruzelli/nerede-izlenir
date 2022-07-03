@@ -1,24 +1,20 @@
 PODS:
-  - KDropDownMultipleSelection (1.0.1)
+  - Kingfisher (7.2.4)
   - MultiStepSlider (2.0)
-  - RSSelectionMenu (7.1.3)
 
 DEPENDENCIES:
-  - KDropDownMultipleSelection (~> 1.0)
+  - Kingfisher (~> 7.2)
   - MultiStepSlider (~> 2.0)
-  - RSSelectionMenu
 
 SPEC REPOS:
   trunk:
-    - KDropDownMultipleSelection
+    - Kingfisher
     - MultiStepSlider
-    - RSSelectionMenu
 
 SPEC CHECKSUMS:
-  KDropDownMultipleSelection: 898c2795ab6daf85c2a51c9adc109094f103a8f9
+  Kingfisher: 2457be2121734e69e54a2312ecc0150eb9ae70b3
   MultiStepSlider: 62c3762ab85455203d1e85082603ee1c0c3477b3
-  RSSelectionMenu: 873d62ebbaef138519f6cf3f073412c2b5d94c2c
 
-PODFILE CHECKSUM: 095d053215b55bfab90920416e5286384f554d98
+PODFILE CHECKSUM: fa3263f30171379aaa51c44955d19c139408678c
 
 COCOAPODS: 1.11.3

@@ -7,5 +7,6 @@ target 'NeredeIzlenir' do
 
   # Pods for NeredeIzlenir
   pod ‘MultiStepSlider’, '~> 2.0'
+  pod 'Kingfisher', '~> 7.2'
 
 end

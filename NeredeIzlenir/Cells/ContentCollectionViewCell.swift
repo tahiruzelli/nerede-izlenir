@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ContentCollectionViewCell: UICollectionViewCell {
     
@@ -25,7 +26,8 @@ class ContentCollectionViewCell: UICollectionViewCell {
     }
     
     override func layoutSubviews() {
-        movieImage.downloaded(from: movie?.poster?.tmdbPoster?.en ?? movie?.backdrops?.first ?? "")
+        let url = URL(string: movie?.poster?.tmdbPoster?.en ?? movie?.backdrops?.first ?? "")
+        movieImage.kf.setImage(with: url)
     }
     
     func setGradientBackground() {

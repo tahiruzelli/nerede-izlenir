@@ -182,7 +182,7 @@ class ContentsViewController: BaseViewController {
     }
     
     @IBAction func nameSortAction(_ sender: Any) {
-        filteredMovies = filteredMovies.sorted(by: {$0.title?.original ?? "" > $1.title?.original ?? ""})
+        filteredMovies = filteredMovies.sorted(by: {$0.title?.en ?? "ZZZ" > $1.title?.en ?? "ZZZ"})
         contentsCollectionView.reloadData()
         makeAllSortButtonsNormal()
         sortNameIcon.tintColor = .lightGray
